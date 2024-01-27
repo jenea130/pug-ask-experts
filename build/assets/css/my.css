@@ -111,6 +111,10 @@ h6 {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -142,6 +146,23 @@ input[type="submit"]:disabled {
   opacity: 0.6 !important;
 }
 
+.btn {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  padding: 0.8rem 4rem 0.8rem 0.8rem;
+  font-family: var(--font-1);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #353535;
+  background: #fff;
+  border-radius: 4.2rem;
+}
+
 .top-header {
   font-size: 1.4rem;
   line-height: 1.6;
@@ -153,7 +174,13 @@ input[type="submit"]:disabled {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5.8rem;
+  min-height: 5.8rem;
+}
+
+@media screen and (max-width: 576px) {
+  .top-header__wrapper {
+    display: block;
+  }
 }
 
 .top-header__days, .top-header__location {
@@ -180,7 +207,70 @@ input[type="submit"]:disabled {
 }
 
 .main-header {
-  color: red;
+  background: rgba(27, 27, 27, 0.9);
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.1rem;
+  column-gap: 1.1rem;
+}
+
+.main-header__logo span {
+  color: #fff;
+  font-family: var(--font-2);
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.main-header__menu {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 3rem;
+  column-gap: 3rem;
+  height: 14rem;
+}
+
+.main-header__link {
+  position: relative;
+  font-family: var(--font-1);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+  transition: 0.3 ease;
+}
+
+.main-header__link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -14px;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #515151;
+}
+
+.main-header__link::before:hover {
+  background: var(--contrast);
+}
+
+.main-header__link:hover {
+  color: var(--contrast);
+}
+
+.main-header__link:hover::before {
+  background: var(--contrast);
 }
 
 /*# sourceMappingURL=my.css.map */

@@ -1,3 +1,22 @@
 header.main-header
     .container
-        .header__wrapper
+        .main-header__wrapper
+            a.main-header__logo(href="#")
+                include ../icons/icon-logo
+                span AskExperts
+            ul.main-header__menu 
+                li
+                    a.main-header__link(href="#") Home
+                li
+                    a.main-header__link(href="#") Pages
+                li
+                    a.main-header__link(href="#") Services
+                li
+                    a.main-header__link(href="#") Work
+                li
+                    a.main-header__link(href="#") Pages
+                li
+                    a.main-header__link(href="#") Contact
+            a.main-header__btn.btn.btn--phone(href="#") + (888) 452 1505
+                include ../icons/icon-phone
+
