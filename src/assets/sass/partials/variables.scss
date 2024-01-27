@@ -1,11 +1,8 @@
-//grid
-$xs:  320px;
-$md:  768px;
-$xl:  1150px;
-
-//colors
-$white:  #fff;
-$black:  #000;
-$tundora: #9fa;
-$brown: brown;
-
+:root {
+    --accent: #FFCC4A;
+    --contrast: #4EAF4E;
+    --font-1: 'Lato', sans-serif;
+    --font-2: 'Cabin', sans-serif;
+    --text-dark: #181818;
+    --text-light: #595566;
+}

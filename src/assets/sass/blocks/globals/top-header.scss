@@ -1,0 +1,30 @@
+.top-header {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #fff;
+  background: var(--text-dark);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.8rem;
+  }
+  &__days,
+  &__location {
+    display: flex;
+    align-items: center;
+    column-gap: 0.6rem;
+  }
+  &__social {
+    display: flex;
+    column-gap: 2.5rem;
+  }
+  &__link {
+    fill: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+      fill: var(--accent);
+    }
+  }
+}

@@ -1,13 +1,103 @@
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url("../fonts/Cabin-SemiBold.woff2") format("woff2"), url("../fonts/Cabin-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url("../fonts/Cabin-Bold.woff2") format("woff2"), url("../fonts/Cabin-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url("../fonts/Cabin-Regular.woff2") format("woff2"), url("../fonts/Cabin-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url("../fonts/Cabin-Medium.woff2") format("woff2"), url("../fonts/Cabin-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --accent: #FFCC4A;
+  --contrast: #4EAF4E;
+  --font-1: 'Lato', sans-serif;
+  --font-2: 'Cabin', sans-serif;
+  --text-dark: #181818;
+  --text-light: #595566;
+}
+
+html {
+  font-size: 62.5%;
+  min-width: 320px;
+}
+
+@media screen and (max-width: 1550px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  line-height: 30px;
-  color: white;
-  background: brown;
+  font-family: var(--font-1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-dark);
 }
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -44,11 +134,53 @@ p {
 .container {
   margin: 0 auto;
   max-width: 1200px;
+  padding: 0 15px;
 }
 
 input[type="submit"]:disabled {
   cursor: not-allowed !important;
   opacity: 0.6 !important;
+}
+
+.top-header {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #fff;
+  background: var(--text-dark);
+}
+
+.top-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.8rem;
+}
+
+.top-header__days, .top-header__location {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.6rem;
+  column-gap: 0.6rem;
+}
+
+.top-header__social {
+  display: flex;
+  -moz-column-gap: 2.5rem;
+  column-gap: 2.5rem;
+}
+
+.top-header__link {
+  fill: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.top-header__link:hover {
+  fill: var(--accent);
+}
+
+.main-header {
+  color: red;
 }
 
 /*# sourceMappingURL=my.css.map */

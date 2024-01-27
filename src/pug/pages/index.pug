@@ -4,9 +4,11 @@ block css
 	link(rel="stylesheet" type="text/css" href="assets/css/my.css")
 
 block title
-	title Main
+	title Main page
 
 block content
+	include ../blocks/globals/top-header
+	include ../blocks/globals/main-header
 
 block scripts
 	script(src="assets/js/dist/webpack.js")
