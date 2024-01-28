@@ -35,7 +35,7 @@ body::after {
   height: 100vh;
   background: green;
   z-index: 100;
-  display: block;
+  display: none;
 }
 
 *,
@@ -88,7 +88,6 @@ input[type="submit"]:disabled {
 }
 .btn {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   column-gap: 1rem;
