@@ -4,20 +4,21 @@ header.main-header
             a.main-header__logo(href="#")
                 include ../icons/icon-logo
                 span AskExperts
-            ul.main-header__menu 
+            ul.main-header__menu.main-menu#js-main-menu
                 li
-                    a.main-header__link(href="#") Home
+                    a.main-menu__link(href="#") Home
                 li
-                    a.main-header__link(href="#") Pages
+                    a.main-menu__link(href="#") Pages
                 li
-                    a.main-header__link(href="#") Services
+                    a.main-menu__link(href="#") Services
                 li
-                    a.main-header__link(href="#") Work
+                    a.main-menu__link(href="#") Work
                 li
-                    a.main-header__link(href="#") Pages
+                    a.main-menu__link(href="#") Pages
                 li
-                    a.main-header__link(href="#") Contact
-            a.main-header__btn.btn.btn--phone(href="#") 
+                    a.main-menu__link(href="#") Contact
+            a.main-header__btn.btn.btn--phone(href="tel:8884521505" target="_blank") 
                 include ../icons/icon-phone
                 span + (888) 452 1505
+            include sandwich
 

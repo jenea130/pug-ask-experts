@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 14rem;
   }
   &__logo {
     display: flex;
@@ -15,43 +16,6 @@
       font-size: 3rem;
       font-weight: 600;
       line-height: 1;
-    }
-  }
-  &__menu {
-    display: flex;
-    align-items: center;
-    column-gap: 4.8rem;
-    height: 14rem;
-  }
-  &__link {
-    position: relative;
-    display: block;
-    padding-left: 14px;
-    font-family: var(--font-1);
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #fff;
-    transition: all 0.3 ease;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      border: 1px solid #515151;
-      &:hover {
-        background: var(--contrast);
-      }
-    }
-    &:hover {
-      color: var(--contrast);
-      &::before {
-        background: var(--contrast);
-      }
     }
   }
 }

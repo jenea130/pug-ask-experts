@@ -1,6 +1,5 @@
-import someScript from "./modules/someScript";
+import toggleMenu from "./modules/header/toggleMenu";
 
 window.addEventListener("DOMContentLoaded", function () {
-    console.log("some thing for me");
-    someScript();
+    toggleMenu();
 });
