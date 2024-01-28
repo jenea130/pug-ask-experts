@@ -16,11 +16,11 @@
   &__location {
     display: flex;
     align-items: center;
-    column-gap: 0.6rem;
+    column-gap: 0.9rem;
   }
   &__social {
     display: flex;
-    column-gap: 2.5rem;
+    column-gap: 2.4rem;
     @media screen and (max-width: 576px) {
         // display: none;
     }
