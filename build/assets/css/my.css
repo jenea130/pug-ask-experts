@@ -237,6 +237,18 @@ input[type="submit"]:disabled {
   height: 14rem;
 }
 
+@media screen and (max-width: 992px) {
+  .main-header__wrapper {
+    height: 12rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-header__wrapper {
+    height: 8rem;
+  }
+}
+
 .main-header__logo {
   display: flex;
   align-items: center;
@@ -250,6 +262,32 @@ input[type="submit"]:disabled {
   font-size: 3rem;
   font-weight: 600;
   line-height: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .main-header__logo {
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-header__btn {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-header__btn {
+    margin-right: 1rem;
+    padding: 0;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-header__btn span {
+    display: none;
+  }
 }
 
 .sandwich-wrap {
@@ -271,11 +309,6 @@ input[type="submit"]:disabled {
   width: 23px;
   height: 14px;
   cursor: pointer;
-}
-
-.sandwich--active {
-  margin-top: -80px;
-  margin-right: 10px;
 }
 
 .sandwich__line {
