@@ -97,7 +97,7 @@ body {
 }
 
 body::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
@@ -159,8 +159,8 @@ input[type="submit"]:disabled {
   opacity: 0.6 !important;
 }
 
-.btn {
-  display: flex;
+.btn--icon {
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   -moz-column-gap: 1rem;
@@ -173,6 +173,18 @@ input[type="submit"]:disabled {
   color: #353535;
   background: #fff;
   border-radius: 4.2rem;
+}
+
+.label {
+  padding: 0 1rem;
+  display: inline-flex;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #181818;
+  letter-spacing: 0.232rem;
+  text-transform: uppercase;
+  background: var(--accent);
+  border-radius: 2rem;
 }
 
 .top-header {
@@ -271,13 +283,13 @@ input[type="submit"]:disabled {
 }
 
 @media screen and (max-width: 992px) {
-  .main-header__btn {
+  .main-header__btn--icon {
     margin-right: 2rem;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .main-header__btn {
+  .main-header__btn--icon {
     margin-right: 1rem;
     padding: 0;
     border-radius: 50%;
@@ -285,7 +297,7 @@ input[type="submit"]:disabled {
 }
 
 @media screen and (max-width: 576px) {
-  .main-header__btn span {
+  .main-header__btn--icon span {
     display: none;
   }
 }
@@ -424,6 +436,168 @@ input[type="submit"]:disabled {
     padding-bottom: 2rem;
     padding-left: 2.4rem;
   }
+}
+
+.home-intro {
+  margin-top: -1px;
+  position: relative;
+  background: #262626;
+}
+
+.home-intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../i/svg/fon-top.svg") no-repeat left 52% top 10%;
+}
+
+@media screen and (max-width: 992px) {
+  .home-intro::before {
+    background: url("../i/svg/fon-top.svg") no-repeat left 52% top -20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-intro::before {
+    background: url("../i/svg/fon-top.svg") no-repeat right -25% top -20%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home-intro::before {
+    background: url("../i/svg/fon-top.svg") no-repeat right -55% top -30%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home-intro::before {
+    background: url("../i/svg/fon-top.svg") no-repeat right -85% top -40%;
+  }
+}
+
+.home-intro::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../i/svg/fon-bottom.svg") no-repeat left bottom;
+}
+
+@media screen and (max-width: 992px) {
+  .home-intro::after {
+    background: url("../i/svg/fon-bottom.svg") no-repeat left -8% bottom -30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-intro::after {
+    background: url("../i/svg/fon-bottom.svg") no-repeat left -7% bottom -30%;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .home-intro::after {
+    background: url("../i/svg/fon-bottom.svg") no-repeat left -7% bottom -40%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home-intro::after {
+    background: url("../i/svg/fon-bottom.svg") no-repeat left -7% bottom -50%;
+  }
+}
+
+.home-intro__img {
+  position: relative;
+  height: 84.1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .home-intro__img {
+    height: 70rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-intro__img {
+    height: 60rem;
+  }
+}
+
+.home-intro__img img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .home-intro__img img {
+    display: none;
+  }
+}
+
+.home-intro .container {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+}
+
+.home-intro__content {
+  position: absolute;
+  top: 32%;
+  left: 2rem;
+  max-width: 50rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .home-intro__content {
+    top: 26%;
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home-intro__content {
+    top: 20%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home-intro__content {
+    top: 15%;
+    left: 2%;
+  }
+}
+
+.home-intro__label {
+  margin-bottom: 2rem;
+}
+
+.home-intro__title {
+  margin-bottom: 2rem;
+  font-family: var(--font-2);
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.home-intro__text {
+  margin-bottom: 2.9rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=my.css.map */
