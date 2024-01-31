@@ -161,7 +161,7 @@ input[type="submit"]:disabled {
 
 .btn {
   display: inline-block;
-  padding: 2rem;
+  padding: 1.8rem 3.2rem;
   font-family: var(--font-1);
   font-size: 1.8rem;
   font-weight: 600;
@@ -170,6 +170,11 @@ input[type="submit"]:disabled {
   color: #353535;
   background: #fff;
   border-radius: 5.5rem;
+}
+
+.btn--dark {
+  color: #fff;
+  background: #151515;
 }
 
 .btn--icon {
@@ -208,12 +213,20 @@ input[type="submit"]:disabled {
   color: #181818;
 }
 
+.subtitle--light {
+  color: #fff;
+}
+
 .text {
   font-family: var(--font-1);
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
   color: #595566;
+}
+
+.text--light {
+  color: #fff;
 }
 
 .top-header {
@@ -629,6 +642,10 @@ input[type="submit"]:disabled {
   line-height: 1.5;
 }
 
+.features {
+  margin-top: -14rem;
+}
+
 .features__wrapper {
   display: flex;
   margin: 0 -1.8rem;
@@ -640,7 +657,6 @@ input[type="submit"]:disabled {
   justify-content: end;
   flex: 0 0 calc(100% / 3 - 3.6rem);
   margin: 0 1.8rem;
-  border: 1px solid red;
   border-radius: 2rem;
   background: #ccc;
 }
@@ -648,6 +664,7 @@ input[type="submit"]:disabled {
 .features__img {
   position: relative;
   height: 47rem;
+  z-index: 1;
 }
 
 .features__img img {
@@ -658,6 +675,21 @@ input[type="submit"]:disabled {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  border-radius: 2rem;
+}
+
+.features__content {
+  position: relative;
+  padding: 23.7rem 4.2rem 5rem 4.2rem;
+  z-index: 2;
+}
+
+.features__subtitle {
+  margin-bottom: 1rem;
+}
+
+.features__text {
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=my.css.map */
