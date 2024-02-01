@@ -35,7 +35,7 @@ body::after {
   height: 100vh;
   background: green;
   z-index: 100;
-  display: none;
+  display: block;
 }
 
 *,
@@ -97,9 +97,18 @@ input[type="submit"]:disabled {
   color: #353535;
   background: #fff;
   border-radius: 5.5rem;
+  transition: all .3s ease;
+  &:hover {
+    color: #fff;
+    background: #353535;
+  }
   &--dark {
     color: #fff;
     background: #151515;
+    &:hover {
+      background: #fff;
+      color: #151515;
+    }
   }
 }
 .btn--icon {
