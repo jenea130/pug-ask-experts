@@ -1,8 +1,27 @@
 .features {
   margin-top: -14rem;
+  @media screen and (max-width: 992px) {
+    margin-top: -9rem;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: -7rem;
+  }
+  @media screen and (max-width: 576px) {
+    margin-top: -5rem;
+  }
   &__wrapper {
     display: flex;
+    row-gap: 2rem;
     margin: 0 -1.8rem;
+    @media screen and (max-width: 992px) {
+      margin: 0 -1.4rem;
+    }
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
   }
   &__item {
     display: flex;
@@ -12,10 +31,20 @@
     margin: 0 1.8rem;
     border-radius: 2rem;
     background: #ccc;
+    @media screen and (max-width: 992px) {
+      flex: 0 0 calc(100% / 3 - 2.8rem);
+      margin: 0 1.4rem;
+    }
+    @media screen and (max-width: 768px) {
+      flex: 1 0 calc(100% / 2 - 2.8rem);
+    }
+    @media screen and (max-width: 576px) {
+      margin-bottom: 2rem;
+    }
   }
   &__img {
     position: relative;
-    height: 47rem;
+    min-height: 47rem;
     z-index: 1;
     img {
       position: absolute;
@@ -31,6 +60,9 @@
     position: relative;
     padding: 23.7rem 4.2rem 5rem 4.2rem;
     z-index: 2;
+    @media screen and (max-width: 992px) {
+      padding: 23.7rem 2.6rem 4rem 2.6rem;
+    }
   }
   &__subtitle {
     margin-bottom: 1rem;
@@ -39,5 +71,6 @@
     margin-bottom: 1.5rem;
   }
   &__btn {
+    margin-top: auto;
   }
 }
