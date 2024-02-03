@@ -1,24 +1,24 @@
 .features {
-  // margin-top: -14rem;
+  margin-top: -14rem;
   margin-bottom: 14rem;
   @media screen and (max-width: 992px) {
-    // margin-top: -9rem;
+    margin-top: -9rem;
   }
   @media screen and (max-width: 768px) {
-    margin-top: -7rem;
+    margin-top: -6rem;
   }
   @media screen and (max-width: 576px) {
-    margin-top: -5rem;
+    margin-top: -4rem;
   }
   &__wrapper {
     display: flex;
-    row-gap: 2rem;
+    row-gap: 2.6rem;
+    justify-content: center;
     margin: 0 -1.8rem;
     @media screen and (max-width: 992px) {
-      margin: 0 -1.4rem;
+      flex-wrap: wrap;
     }
     @media screen and (max-width: 768px) {
-      flex-wrap: wrap;
     }
     @media screen and (max-width: 576px) {
       display: block;
@@ -33,11 +33,10 @@
     border-radius: 2rem;
     background: #ccc;
     @media screen and (max-width: 992px) {
-      flex: 0 0 calc(100% / 3 - 2.8rem);
-      margin: 0 1.4rem;
+      flex: 0 0 calc(100% / 2 - 3.6rem);
     }
     @media screen and (max-width: 768px) {
-      flex: 1 0 calc(100% / 2 - 2.8rem);
+      // flex: 1 0 calc(100% / 2 - 2.8rem);
     }
     @media screen and (max-width: 576px) {
       margin-bottom: 2rem;
