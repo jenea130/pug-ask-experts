@@ -170,7 +170,7 @@ input[type="submit"]:disabled {
   color: #353535;
   background: #fff;
   border-radius: 5.5rem;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
@@ -181,11 +181,14 @@ input[type="submit"]:disabled {
 .btn--dark {
   color: #fff;
   background: #151515;
+  border: 1px solid #151515;
+  transition: all 0.3s ease;
 }
 
 .btn--dark:hover {
   background: #fff;
   color: #151515;
+  border: 1px solid #151515;
 }
 
 .btn--icon {
@@ -583,7 +586,7 @@ input[type="submit"]:disabled {
 
 @media screen and (max-width: 992px) {
   .home-intro__img {
-    height: 70rem;
+    height: auto;
   }
 }
 
@@ -604,9 +607,9 @@ input[type="submit"]:disabled {
   z-index: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .home-intro__img img {
-    display: none;
+    position: relative;
   }
 }
 
@@ -622,6 +625,12 @@ input[type="submit"]:disabled {
   left: 1.6rem;
   max-width: 50rem;
   color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .home-intro__content {
+    position: static;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -669,14 +678,7 @@ input[type="submit"]:disabled {
 }
 
 .features {
-  margin-top: -14rem;
   margin-bottom: 14rem;
-}
-
-@media screen and (max-width: 992px) {
-  .features {
-    margin-top: -9rem;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -797,8 +799,7 @@ input[type="submit"]:disabled {
 }
 
 .about-me__content {
-  flex: 1;
-  width: 100%;
+  flex: 1 0 42rem;
   max-width: 42rem;
 }
 
@@ -824,28 +825,13 @@ input[type="submit"]:disabled {
 }
 
 .about-me__email::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 25rem;
   height: 0.1rem;
   background: #d8d8d8;
-}
-
-.about-me__email--circle {
-  position: relative;
-  width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 50%;
-  background: #ccc;
-}
-
-.about-me__email--circle svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .about-me__phone {
@@ -857,8 +843,13 @@ input[type="submit"]:disabled {
   padding: 2rem 2rem 2rem 0;
 }
 
+.about-me__phone svg {
+  fill: #E2F4E2;
+  stroke: #37A437;
+}
+
 .about-me__phone::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -873,7 +864,7 @@ input[type="submit"]:disabled {
 
 .about-me__picture {
   position: relative;
-  flex: 0 0 70rem;
+  flex: 1 0 70rem;
 }
 
 .about-me__picture img {
@@ -956,6 +947,28 @@ input[type="submit"]:disabled {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1;
+}
+
+.services {
+  padding: 15rem 0 0 0;
+  background: #f5f5f5;
+}
+
+.services__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__label {
+  margin-bottom: 0.8rem;
+  color: #fff;
+  background: var(--contrast);
+}
+
+.services__title {
+  max-width: 78.1rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=my.css.map */

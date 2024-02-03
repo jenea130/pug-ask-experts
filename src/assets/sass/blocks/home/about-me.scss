@@ -6,8 +6,7 @@
     height: 66rem;
   }
   &__content {
-    flex: 1;
-    width: 100%;
+    flex: 1 0 42rem;
     max-width: 42rem;
   }
   &__label {
@@ -26,26 +25,13 @@
     column-gap: 1rem;
     padding: 2rem 4rem 2rem 0;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 25rem;
       height: 0.1rem;
       background: #d8d8d8;
-    }
-    &--circle {
-      position: relative;
-      width: 4.5rem;
-      height: 4.5rem;
-      border-radius: 50%;
-      background: #ccc;
-      svg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
     }
   }
   &__phone {
@@ -54,8 +40,12 @@
     align-items: center;
     column-gap: 1rem;
     padding: 2rem 2rem 2rem 0;
+    svg {
+      fill: #E2F4E2;
+      stroke: #37A437;
+    }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -69,7 +59,7 @@
   }
   &__picture {
     position: relative;
-    flex: 0 0 70rem;
+    flex: 1 0 70rem;
     img {
       position: absolute;
       top: 0;
@@ -121,7 +111,11 @@
     bottom: 5.8rem;
     width: 34.3rem;
     height: 16.3rem;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) );
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0)
+    );
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
@@ -129,7 +123,7 @@
     border-radius: 3rem;
     z-index: 4;
     svg {
-        margin-bottom: 1rem;
+      margin-bottom: 1rem;
     }
   }
   &__quantity {
