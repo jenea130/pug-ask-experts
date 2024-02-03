@@ -2,6 +2,15 @@
   margin-top: -1px;
   position: relative;
   background: #262626;
+  @media screen and (max-width: 992px) {
+    height: 140rem;
+  }
+  @media screen and (max-width: 768px) {
+    height: 125rem;
+  }
+  @media screen and (max-width: 576px) {
+    height: 104rem;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -11,16 +20,16 @@
     height: 100%;
     background: url("../i/svg/fon-top.svg") no-repeat left 52% top 10%;
     @media screen and (max-width: 992px) {
-      background: url("../i/svg/fon-top.svg") no-repeat left 52% top -20%;
+      background: url("../i/svg/fon-top.svg") no-repeat right -5% bottom 20%;
     }
     @media screen and (max-width: 768px) {
-      background: url("../i/svg/fon-top.svg") no-repeat right -25% top -20%;
+      background: url("../i/svg/fon-top.svg") no-repeat right -30% bottom 20%;
+    }
+    @media screen and (max-width: 660px) {
+      background: url("../i/svg/fon-top.svg") no-repeat right -50% bottom 20%;
     }
     @media screen and (max-width: 576px) {
-      background: url("../i/svg/fon-top.svg") no-repeat right -55% top -30%;
-    }
-    @media screen and (max-width: 400px) {
-      background: url("../i/svg/fon-top.svg") no-repeat right -85% top -40%;
+      display: none;
     }
   }
   &::after {
@@ -32,26 +41,28 @@
     height: 100%;
     background: url("../i/svg/fon-bottom.svg") no-repeat left bottom;
     @media screen and (max-width: 992px) {
-      background: url("../i/svg/fon-bottom.svg") no-repeat left -8% bottom -30%;
+      background: url("../i/svg/fon-bottom.svg") no-repeat left bottom;
     }
     @media screen and (max-width: 768px) {
-      background: url("../i/svg/fon-bottom.svg") no-repeat left -7% bottom -30%;
+      background: url("../i/svg/fon-bottom.svg") no-repeat left -5% bottom;
     }
-    @media screen and (max-width: 567px) {
-      background: url("../i/svg/fon-bottom.svg") no-repeat left -7% bottom -40%;
+    @media screen and (max-width: 660px) {
+      background: url("../i/svg/fon-bottom.svg") no-repeat left -15% bottom -10%;
     }
-    @media screen and (max-width: 400px) {
-      background: url("../i/svg/fon-bottom.svg") no-repeat left -7% bottom -50%;
+    @media screen and (max-width: 576px) {
+      display: none;
     }
   }
   &__img {
     position: relative;
     height: 84.1rem;
     @media screen and (max-width: 992px) {
-      // height: 70rem;
-      height: auto;
+      height: 90rem;
     }
     @media screen and (max-width: 768px) {
+      height: 80rem;
+    }
+    @media screen and (max-width: 576px) {
       height: 60rem;
     }
     img {
@@ -63,7 +74,7 @@
       object-fit: cover;
       z-index: 1;
       @media screen and (max-width: 992px) {
-        position: relative;
+        width: 100%;
       }
     }
   }
@@ -79,19 +90,17 @@
     max-width: 50rem;
     color: #fff;
     @media screen and (max-width: 992px) {
-      position: static;
+      position: relative;
+      top: 110%;
+      left: 23%;
     }
     @media screen and (max-width: 768px) {
-      top: 26%;
-      left: 20%;
+      top: 110%;
     }
     @media screen and (max-width: 576px) {
-      top: 20%;
-      left: 10%;
-    }
-    @media screen and (max-width: 400px) {
-      top: 15%;
-      left: 2%;
+      top: 110%;
+      left: 0;
+      max-width: 44rem;
     }
   }
   &__label {
@@ -103,6 +112,9 @@
     font-size: 5rem;
     font-weight: 700;
     line-height: 1.2;
+    @media screen and (max-width: 576px) {
+      font-size: 4rem;
+    }
   }
   &__text {
     margin-bottom: 2.9rem;
