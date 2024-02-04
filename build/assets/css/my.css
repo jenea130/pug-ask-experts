@@ -181,14 +181,14 @@ input[type="submit"]:disabled {
 .btn--dark {
   color: #fff;
   background: #151515;
-  border: 1px solid #151515;
+  border: 2px solid #151515;
   transition: all 0.3s ease;
 }
 
 .btn--dark:hover {
   background: #fff;
   color: #151515;
-  border: 1px solid #151515;
+  border: 2px solid #151515;
 }
 
 .btn--icon {
@@ -813,14 +813,27 @@ input[type="submit"]:disabled {
 
 .about-me__wrapper {
   display: flex;
+  flex-direction: row-reverse;
   -moz-column-gap: 7.3rem;
   column-gap: 7.3rem;
   height: 66rem;
 }
 
+@media screen and (max-width: 992px) {
+  .about-me__wrapper {
+    display: block;
+  }
+}
+
 .about-me__content {
   flex: 1 0 42rem;
   max-width: 42rem;
+}
+
+@media screen and (max-width: 992px) {
+  .about-me__content {
+    max-width: 100%;
+  }
 }
 
 .about-me__label {
@@ -837,7 +850,7 @@ input[type="submit"]:disabled {
 
 .about-me__email {
   position: relative;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   -moz-column-gap: 1rem;
   column-gap: 1rem;
@@ -856,7 +869,7 @@ input[type="submit"]:disabled {
 
 .about-me__phone {
   position: relative;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   -moz-column-gap: 1rem;
   column-gap: 1rem;
@@ -887,6 +900,13 @@ input[type="submit"]:disabled {
   flex: 1 0 70rem;
 }
 
+@media screen and (max-width: 992px) {
+  .about-me__picture {
+    margin-bottom: 4rem;
+    height: 66rem;
+  }
+}
+
 .about-me__picture img {
   position: absolute;
   top: 0;
@@ -897,6 +917,13 @@ input[type="submit"]:disabled {
   object-fit: cover;
   border-radius: 2.9rem;
   z-index: 2;
+}
+
+@media screen and (max-width: 576px) {
+  .about-me__picture img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .about-me__picture::after {

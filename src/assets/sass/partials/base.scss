@@ -105,12 +105,12 @@ input[type="submit"]:disabled {
   &--dark {
     color: #fff;
     background: #151515;
-    border: 1px solid #151515;
+    border: 2px solid #151515;
     transition: all 0.3s ease;
     &:hover {
       background: #fff;
       color: #151515;
-      border: 1px solid #151515;
+      border: 2px solid #151515;
     }
   }
 }
