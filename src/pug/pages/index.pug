@@ -12,8 +12,11 @@ block content
 	//- include ../blocks/home/home-intro
 	.container 
 		//- include ../blocks/home/features
-		include ../blocks/home/about-me
-	//- include ../blocks/home/services
+		//- include ../blocks/home/about-me
+	include ../blocks/home/services
 
 block scripts
+	script(src="assets/libs/jquery-3.7.1.min.js")
+	script(src="assets/libs/slick.min.js")
 	script(src="assets/js/dist/webpack.js")
+	script(src="assets/jquery/custom-jquery.js")

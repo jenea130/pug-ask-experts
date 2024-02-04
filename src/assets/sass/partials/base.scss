@@ -145,6 +145,12 @@ input[type="submit"]:disabled {
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 1.16;
+  @media screen and (max-width: 768px) {
+    font-size: 4rem;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 3.5rem;
+  }
 }
 
 .subtitle {
