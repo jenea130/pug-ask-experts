@@ -153,7 +153,6 @@ p {
   margin: 0 auto;
   max-width: 1230px;
   padding: 0 15px;
-  border: 1px solid red;
   position: relative;
   z-index: 5;
 }
@@ -1268,7 +1267,6 @@ input[type="submit"]:disabled {
   justify-content: space-between;
   padding: 13.2rem 0;
   z-index: 2;
-  border: 1px solid blue;
 }
 
 @media screen and (max-width: 992px) {
@@ -1349,6 +1347,21 @@ input[type="submit"]:disabled {
 
 .experience__text {
   color: #181818;
+}
+
+.work {
+  position: relative;
+  height: 156.4rem;
+}
+
+.work img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=my.css.map */

@@ -41,18 +41,22 @@ $(document).ready(function () {
   }
 });
 
-$(".experience__item").roundSlider({
+$(".experience__item").each(function () {
+  const count = $(this).attr("data-count")
+  console.log(count)
+  $(this).roundSlider({
     radius: 90,
     width: 5,
     handleSize: 30,
     handleShape: "dot",
     startAngle: 90,
     slideType: "min-range",
-    value: 83,
+    value: parseInt(count),
     pathColor: "#daae3c",
     borderColor: "none",
     rangeColor: "#fff",
-})
+  });
+});
 // $("#slider2").roundSlider({
 //     radius: 100,
 //     width: 5,
