@@ -17,7 +17,7 @@ $(document).ready(function () {
       speed: 1000,
       arrows: false,
       dots: false,
-      autoplay: true,
+      // autoplay: true,
       autoplaySpeed: 2000,
       easing: "ease",
       responsive: [

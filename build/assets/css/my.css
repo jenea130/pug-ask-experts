@@ -1230,6 +1230,7 @@ input[type="submit"]:disabled {
 }
 
 .experience {
+  overflow: hidden;
   position: relative;
   background: var(--accent);
   z-index: 1;
