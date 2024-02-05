@@ -1,5 +1,10 @@
 $(document).ready(function () {
   const slider = $(".services__wrapper");
+  const experience_item = document.querySelector(".experience__item");
+
+  if (experience_item) {
+    experienceRange();
+  }
 
   if (slider) {
     servicesSlider();
@@ -39,39 +44,23 @@ $(document).ready(function () {
       slider.slick("slickNext");
     });
   }
-});
 
-$(".experience__item").each(function () {
-  const count = $(this).attr("data-count")
-  console.log(count)
-  $(this).roundSlider({
-    radius: 90,
-    width: 5,
-    handleSize: 30,
-    handleShape: "dot",
-    startAngle: 90,
-    slideType: "min-range",
-    value: parseInt(count),
-    pathColor: "#daae3c",
-    borderColor: "none",
-    rangeColor: "#fff",
-  });
+  function experienceRange() {
+    $(".experience__item").each(function () {
+      const count = $(this).attr("data-count");
+
+      $(this).roundSlider({
+        radius: 90,
+        width: 5,
+        handleSize: 30,
+        handleShape: "dot",
+        startAngle: 90,
+        slideType: "min-range",
+        value: parseInt(count),
+        pathColor: "#daae3c",
+        borderColor: "none",
+        rangeColor: "#fff",
+      });
+    });
+  }
 });
-// $("#slider2").roundSlider({
-//     radius: 100,
-//     width: 5,
-//     handleSize: 30,
-//     handleShape: "dot",
-//     startAngle: 90,
-//     slideType: "min-range",
-//     value: 83,
-// })
-// $("#slider3").roundSlider({
-//     radius: 100,
-//     width: 5,
-//     handleSize: 30,
-//     handleShape: "dot",
-//     startAngle: 90,
-//     slideType: "min-range",
-//     value: 83,
-// })
