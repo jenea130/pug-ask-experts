@@ -40,3 +40,34 @@ $(document).ready(function () {
     });
   }
 });
+
+$(".experience__item").roundSlider({
+    radius: 90,
+    width: 5,
+    handleSize: 30,
+    handleShape: "dot",
+    startAngle: 90,
+    slideType: "min-range",
+    value: 83,
+    pathColor: "#daae3c",
+    borderColor: "none",
+    rangeColor: "#fff",
+})
+// $("#slider2").roundSlider({
+//     radius: 100,
+//     width: 5,
+//     handleSize: 30,
+//     handleShape: "dot",
+//     startAngle: 90,
+//     slideType: "min-range",
+//     value: 83,
+// })
+// $("#slider3").roundSlider({
+//     radius: 100,
+//     width: 5,
+//     handleSize: 30,
+//     handleShape: "dot",
+//     startAngle: 90,
+//     slideType: "min-range",
+//     value: 83,
+// })
