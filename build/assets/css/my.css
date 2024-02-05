@@ -1134,21 +1134,18 @@ input[type="submit"]:disabled {
   text-align: center;
 }
 
-.services__arrows {
+.services__body {
   position: relative;
-  top: 11.9rem;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  z-index: 2;
 }
 
 .services__arrow {
-  position: relative;
+  position: absolute;
+  top: 10rem;
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
   background: #fff;
+  z-index: 100;
 }
 
 .services__arrow:hover {
@@ -1176,7 +1173,6 @@ input[type="submit"]:disabled {
 }
 
 .services__wrapper {
-  margin-top: -7.2rem;
   display: flex;
 }
 

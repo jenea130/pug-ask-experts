@@ -16,21 +16,17 @@
     max-width: 78.1rem;
     text-align: center;
   }
-  &__arrows {
+  &__body {
     position: relative;
-    // top: 19rem;
-    top: 11.9rem;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    z-index: 2;
   }
   &__arrow {
-    position: relative;
+    position: absolute;
+    top: 10rem;
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
     background: #fff;
+    z-index: 100;
     &:hover {
       background: #181818;
     }
@@ -53,7 +49,6 @@
   }
   
   &__wrapper {
-    margin-top: -7.2rem;
     display: flex;
   }
   .slick-list {
