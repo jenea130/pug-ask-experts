@@ -942,7 +942,6 @@ input[type="submit"]:disabled {
 
 .about-me__content {
   flex: 1 0 42rem;
-  max-width: 42rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -992,8 +991,8 @@ input[type="submit"]:disabled {
 }
 
 .about-me__phone svg {
-  fill: #E2F4E2;
-  stroke: #37A437;
+  fill: #e2f4e2;
+  stroke: #37a437;
 }
 
 .about-me__phone::before {
@@ -1018,7 +1017,7 @@ input[type="submit"]:disabled {
 @media screen and (max-width: 992px) {
   .about-me__picture {
     margin-bottom: 4rem;
-    height: 66rem;
+    padding-bottom: 82%;
   }
 }
 
@@ -1048,7 +1047,7 @@ input[type="submit"]:disabled {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../i/svg/fon-about-us.svg") no-repeat left bottom;
+  background: url("../i/svg/fon-about-us.svg") no-repeat left bottom 1rem;
   z-index: 1;
 }
 
@@ -1081,8 +1080,8 @@ input[type="submit"]:disabled {
   align-items: center;
   -moz-column-gap: 1.4rem;
   column-gap: 1.4rem;
-  right: 4.4rem;
-  bottom: 5.8rem;
+  top: 67%;
+  left: 46%;
   width: 34.3rem;
   height: 16.3rem;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
@@ -1091,7 +1090,7 @@ input[type="submit"]:disabled {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 3rem;
-  z-index: 4;
+  z-index: 5;
 }
 
 .about-me__clients svg {
