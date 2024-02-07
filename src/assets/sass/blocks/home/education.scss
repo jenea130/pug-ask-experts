@@ -1,0 +1,68 @@
+.education {
+  padding: 14.7rem 0;
+  text-align: center;
+  &__label {
+    margin-bottom: 1rem;
+  }
+  &__title {
+    margin-bottom: 1.6rem;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.9rem;
+  }
+  &--left {
+    background: var(--contrast);
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__col {
+    max-width: 43.7rem;
+    text-align: left;
+  }
+  &__col--right {
+    text-align: right;
+  }
+  &__item {
+    margin-bottom: 6.2rem;
+  }
+  &__item--left {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 33px;
+      height: 33px;
+      background: url("../i/svg/icon-circle-left.svg") no-repeat;
+    }
+  }
+  &__item--right {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 33px;
+      height: 33px;
+      background: url("../i/svg/icon-circle-right.svg") no-repeat;
+    }
+  }
+  &__desc {
+    margin-bottom: 0.4rem;
+    font-size: 1.8rem;
+    line-height: 1.48;
+    color: #8a8a8a;
+  }
+  &__subtitle {
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+  &__text {
+  }
+}
