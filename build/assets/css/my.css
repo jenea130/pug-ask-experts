@@ -1567,7 +1567,7 @@ input[type="submit"]:disabled {
 }
 
 .education__col {
-  max-width: 43.7rem;
+  max-width: 54rem;
   text-align: left;
 }
 
@@ -1581,6 +1581,11 @@ input[type="submit"]:disabled {
 
 .education__item--left {
   position: relative;
+  padding-left: 6rem;
+  background-image: linear-gradient(to bottom, #fff 50%, #181818 50%);
+  background-size: 2px 6px;
+  background-repeat: repeat-y;
+  background-position: 15px 0;
 }
 
 .education__item--left::before {
@@ -1595,6 +1600,11 @@ input[type="submit"]:disabled {
 
 .education__item--right {
   position: relative;
+  padding-right: 6rem;
+  background-image: linear-gradient(to bottom, #fff 50%, #181818 50%);
+  background-size: 2px 6px;
+  background-repeat: repeat-y;
+  background-position: 523px 0;
 }
 
 .education__item--right::before {
