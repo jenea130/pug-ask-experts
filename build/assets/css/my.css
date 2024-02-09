@@ -1543,6 +1543,24 @@ input[type="submit"]:disabled {
   text-align: center;
 }
 
+@media screen and (max-width: 992px) {
+  .education {
+    padding: 12rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .education {
+    padding: 10rem 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .education {
+    padding: 7rem 0;
+  }
+}
+
 .education__label {
   margin-bottom: 1rem;
 }
@@ -1551,19 +1569,17 @@ input[type="submit"]:disabled {
   margin-bottom: 1.6rem;
 }
 
-.education__header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 3.9rem;
-}
-
-.education--left {
-  background: var(--contrast);
-}
-
 .education__wrapper {
   display: flex;
   justify-content: space-between;
+  -moz-column-gap: 5rem;
+  column-gap: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .education__wrapper {
+    flex-wrap: wrap;
+  }
 }
 
 .education__col {
@@ -1575,8 +1591,29 @@ input[type="submit"]:disabled {
   text-align: right;
 }
 
+@media screen and (max-width: 768px) {
+  .education__col--right {
+    align-self: right;
+    margin-left: auto;
+  }
+}
+
+.education__label--left, .education__label--right {
+  margin-bottom: 3.9rem;
+}
+
+.education__label--right {
+  background: var(--contrast);
+}
+
 .education__item {
   margin-bottom: 6.2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .education__item {
+    margin-bottom: 4.2rem;
+  }
 }
 
 .education__item--left {
@@ -1604,7 +1641,25 @@ input[type="submit"]:disabled {
   background-image: linear-gradient(to bottom, #fff 50%, #181818 50%);
   background-size: 2px 6px;
   background-repeat: repeat-y;
-  background-position: 523px 0;
+  background-position: 97% 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .education__item--right {
+    background-position: 97% 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .education__item--right {
+    background-position: 96.5% 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .education__item--right {
+    background-position: 96% 0;
+  }
 }
 
 .education__item--right::before {

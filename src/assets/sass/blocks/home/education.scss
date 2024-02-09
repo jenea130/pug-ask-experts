@@ -1,23 +1,28 @@
 .education {
   padding: 14.7rem 0;
   text-align: center;
+  @media screen and (max-width: 992px) {
+    padding: 12rem 0;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 10rem 0;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 7rem 0;
+  }
   &__label {
     margin-bottom: 1rem;
   }
   &__title {
     margin-bottom: 1.6rem;
   }
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 3.9rem;
-  }
-  &--left {
-    background: var(--contrast);
-  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    column-gap: 5rem;
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
   }
   &__col {
     max-width: 54rem;
@@ -25,9 +30,23 @@
   }
   &__col--right {
     text-align: right;
+    @media screen and (max-width: 768px) {
+      align-self: right;
+      margin-left: auto;
+    }
+  }
+  &__label--left,
+  &__label--right {
+    margin-bottom: 3.9rem;
+  }
+  &__label--right {
+    background: var(--contrast);
   }
   &__item {
     margin-bottom: 6.2rem;
+    @media screen and (max-width: 576px) {
+      margin-bottom: 4.2rem;
+    }
   }
   &__item--left {
     position: relative;
@@ -52,7 +71,16 @@
     background-image: linear-gradient(to bottom, #fff 50%, #181818 50%);
     background-size: 2px 6px;
     background-repeat: repeat-y;
-    background-position: 523px 0;
+    background-position: 97% 0;
+    @media screen and (max-width: 1200px) {
+      background-position: 97% 0;
+    }
+    @media screen and (max-width: 576px) {
+      background-position: 96.5% 0;
+    }
+    @media screen and (max-width: 450px) {
+      background-position: 96% 0;
+    }
     &::before {
       content: "";
       position: absolute;
