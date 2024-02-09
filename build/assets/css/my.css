@@ -1523,6 +1523,7 @@ input[type="submit"]:disabled {
 
 .work__info {
   position: absolute;
+  padding-right: 5rem;
   left: 6rem;
   bottom: 5.4rem;
   z-index: 3;
