@@ -1,0 +1,50 @@
+.counter {
+  &__wrapper {
+    padding: 12rem 0 8.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -7rem;
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+      padding: 10rem 0 7rem;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 7rem 0 4rem;
+      display: block;
+    }
+  }
+  &__item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    column-gap: 1.4rem;
+    border-right: 2px dotted #989898;
+    @media screen and (max-width: 992px) {
+      flex: 50%;
+      margin-bottom: 4rem;
+    }
+    @media screen and (max-width: 480px) {
+    }
+  }
+  &__item:last-child {
+    border-right: none;
+  }
+  &__icon {
+    padding-top: 1rem;
+  }
+  & &__num {
+    font-family: var(--font-2);
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 1.16;
+    color: var(--text-dark);
+  }
+  &__desc {
+    font-family: var(--font-2);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.16;
+    color: #595566;
+  }
+}
