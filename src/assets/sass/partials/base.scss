@@ -137,7 +137,7 @@ input[type="submit"]:disabled {
   display: inline-flex;
   font-size: 1.6rem;
   line-height: 1.5;
-  color: #181818;
+  color: var(--text-dark);
   letter-spacing: 0.232rem;
   text-transform: uppercase;
   background: var(--accent);
