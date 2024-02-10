@@ -2063,7 +2063,7 @@ input[type="submit"]:disabled {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   -o-object-fit: cover;
   object-fit: cover;
   background: linear-gradient(360deg, #181818 0%, rgba(24, 24, 24, 0) 100%);
@@ -2089,6 +2089,29 @@ input[type="submit"]:disabled {
 .team__title {
   margin-bottom: 2.2rem;
   color: #fff;
+}
+
+.brands {
+  padding: 3rem 3rem;
+  height: 23.7rem;
+  background: var(--text-dark);
+}
+
+@media screen and (max-width: 1200px) {
+  .brands {
+    height: auto;
+  }
+}
+
+.brands__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 6rem;
+  column-gap: 6rem;
+  gap: 4rem 6rem;
+  height: 100%;
 }
 
 /*# sourceMappingURL=my.css.map */
