@@ -1017,8 +1017,14 @@ input[type="submit"]:disabled {
 
 @media screen and (max-width: 992px) {
   .about-me__picture {
-    margin-bottom: 4rem;
-    padding-bottom: 82%;
+    margin-bottom: 10rem;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-me__picture {
+    margin-bottom: 16rem;
   }
 }
 
@@ -1032,6 +1038,14 @@ input[type="submit"]:disabled {
   object-fit: cover;
   border-radius: 2.9rem;
   z-index: 2;
+}
+
+@media screen and (max-width: 992px) {
+  .about-me__picture img {
+    position: static;
+    width: auto;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1052,26 +1066,45 @@ input[type="submit"]:disabled {
   z-index: 1;
 }
 
-.about-me .circle--yellow {
+@media screen and (max-width: 768px) {
+  .about-me__picture::after {
+    display: none;
+  }
+}
+
+.about-me__circle {
   position: absolute;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+@media screen and (max-width: 576px) {
+  .about-me__circle {
+    display: none;
+  }
+}
+
+.about-me__circle--yellow {
   left: 36%;
   bottom: 12%;
   width: 18.1rem;
   height: 18.1rem;
-  border-radius: 50%;
   background: var(--accent);
-  z-index: 3;
 }
 
-.about-me .circle--green {
-  position: absolute;
+@media screen and (max-width: 992px) {
+  .about-me__circle--yellow {
+    left: initial;
+    right: 30rem;
+  }
+}
+
+.about-me__circle--green {
   right: 0;
   bottom: 0;
   width: 16.2rem;
   height: 16.2rem;
-  border-radius: 50%;
   background: var(--contrast);
-  z-index: 3;
 }
 
 .about-me__clients {
@@ -1094,6 +1127,24 @@ input[type="submit"]:disabled {
   z-index: 5;
 }
 
+@media screen and (max-width: 992px) {
+  .about-me__clients {
+    left: initial;
+    right: 7rem;
+    top: 75%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-me__clients {
+    top: 90%;
+    right: 0;
+    width: auto;
+    height: auto;
+    padding: 3.2rem;
+  }
+}
+
 .about-me__clients svg {
   margin-bottom: 1rem;
 }
@@ -1103,6 +1154,12 @@ input[type="submit"]:disabled {
   font-size: 6.6rem;
   font-weight: 600;
   line-height: 1;
+}
+
+@media screen and (max-width: 576px) {
+  .about-me__quantity {
+    font-size: 4rem;
+  }
 }
 
 .about-me__description {
