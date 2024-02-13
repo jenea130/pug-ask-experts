@@ -10,6 +10,12 @@
 @import "blocks/globals/main-header";
 @import "blocks/globals/sandwich";
 @import "blocks/globals/main-menu";
+@import "blocks/globals/btn";
+@import "blocks/globals/btn-icon";
+@import "blocks/globals/label";
+@import "blocks/globals/title";
+@import "blocks/globals/subtitle";
+@import "blocks/globals/text";
 
 // blocks
 @import "blocks/home/home-intro";
@@ -23,3 +29,5 @@
 @import "blocks/home/reviews";
 @import "blocks/home/team";
 @import "blocks/home/brands";
+@import "blocks/home/plan";
+@import "blocks/home/card-plan";
