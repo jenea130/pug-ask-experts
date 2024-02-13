@@ -1,4 +1,4 @@
-.btn--icon {
+.btn-icon {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
@@ -11,4 +11,15 @@
   color: #353535;
   background: #fff;
   border-radius: 4.2rem;
+
+  &.btn-icon--mobile {
+    @media screen and (max-width: 575px) {
+      padding: 0;
+    }
+    span {
+      @media screen and (max-width: 576px) {
+        display: none;
+      }
+    }
+  }
 }

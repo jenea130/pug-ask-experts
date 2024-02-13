@@ -42,4 +42,9 @@
       }
     }
   }
+  .btn-icon {
+    @media screen and (max-width: 992px) {
+      margin-right: 2rem;
+    }
+  }
 }
