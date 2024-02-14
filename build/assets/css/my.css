@@ -2173,6 +2173,48 @@ input[type="submit"]:disabled {
   margin-bottom: 3.3rem;
 }
 
+.plan__text {
+  margin-bottom: 1.5rem;
+}
+
+.plan__flex {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+}
+
+.plan__item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  padding: 1.4rem 1.6rem;
+  border-radius: 5.5rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+.plan__item:hover .plan__circle {
+  background: var(--contrast);
+  border: 1px solid var(--contrast);
+}
+
+.plan__circle {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  border: 1px solid #d8d8d8;
+}
+
+.plan__tarif {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #595566;
+}
+
 .card-plan {
   padding: 2.2rem 2.2rem 4.2rem;
   border-radius: 2.1rem;
@@ -2272,6 +2314,7 @@ input[type="submit"]:disabled {
 .card-plan__btn:hover {
   color: var(--text-dark);
   background: var(--accent);
+  border: 1px solid var(--accent);
 }
 
 /*# sourceMappingURL=my.css.map */
