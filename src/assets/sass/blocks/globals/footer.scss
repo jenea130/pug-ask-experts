@@ -1,0 +1,32 @@
+.footer {
+  &__subtitle {
+    margin-bottom: 0.4rem;
+    font-family: var(--font-2);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.05;
+    color: #181818;
+  }
+  &__list {
+    list-style: disc;
+  }
+  &__item {
+    position: relative;
+    padding-left: 2rem;
+    line-height: 2;
+    color: #595566;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0.8rem;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #595566;
+    }
+  }
+  &__text {
+  }
+}
