@@ -8,6 +8,8 @@
   text-align: center;
   color: #353535;
   background: transparent;
+  border: none;
+  outline: none;
   border-radius: 5.5rem;
   transition: all 0.3s ease;
   &:hover {
@@ -25,8 +27,12 @@
       border: 2px solid #151515;
     }
   }
-  &--contrast {
+  &--accent {
     color: #181818;
     background: var(--accent);
+  }
+  &--contrast {
+    color: #fff;
+    background: var(--contrast);
   }
 }

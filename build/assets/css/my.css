@@ -528,6 +528,8 @@ input[type="submit"]:disabled {
   text-align: center;
   color: #353535;
   background: transparent;
+  border: none;
+  outline: none;
   border-radius: 5.5rem;
   transition: all 0.3s ease;
 }
@@ -550,9 +552,14 @@ input[type="submit"]:disabled {
   border: 2px solid #151515;
 }
 
-.btn--contrast {
+.btn--accent {
   color: #181818;
   background: var(--accent);
+}
+
+.btn--contrast {
+  color: #fff;
+  background: var(--contrast);
 }
 
 .btn-icon {
@@ -640,6 +647,47 @@ input[type="submit"]:disabled {
 
 .text--light {
   color: #fff;
+}
+
+.form__group {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 2.8rem;
+  column-gap: 2.8rem;
+}
+
+.form input {
+  padding: 2.2rem 2rem;
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--text-dark);
+  width: 100%;
+  max-width: 30rem;
+  border: none;
+  outline: none;
+  border-radius: 5.4rem;
+}
+
+.form input::-moz-placeholder {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.475;
+  color: #a9a9a9;
+}
+
+.form input::placeholder {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.475;
+  color: #a9a9a9;
+}
+
+.form button {
+  padding: 1.6rem 2.7rem;
+  border-radius: 4.7rem;
 }
 
 .home-intro {
@@ -2129,7 +2177,7 @@ input[type="submit"]:disabled {
 }
 
 .plan {
-  padding: 13.3rem 0;
+  padding: 13.3rem 0 30.8rem;
   background: #f5f5f5;
 }
 
@@ -2315,6 +2363,88 @@ input[type="submit"]:disabled {
   color: var(--text-dark);
   background: var(--accent);
   border: 1px solid var(--accent);
+}
+
+.wrapper {
+  position: relative;
+  left: -3.4rem;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: -8rem;
+  left: -4rem;
+  width: 27rem;
+  height: 27rem;
+  background: url("../i/svg/fon-contact-1.svg") no-repeat;
+  z-index: 1;
+}
+
+.contact {
+  position: relative;
+  margin-top: -17rem;
+  background: #181818;
+  border-radius: 3rem;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.contact__img {
+  position: relative;
+  padding-bottom: 34%;
+  -webkit-clip-path: polygon(56.08% 0%, 100% 0%, 100% 100%, 57% 100%, 49% 22%);
+  clip-path: polygon(56.08% 0%, 100% 0%, 100% 100%, 57% 100%, 49% 22%);
+}
+
+.contact__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: 100% 100%;
+  object-position: 100% 100%;
+}
+
+.contact__img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25.9rem;
+  height: 25.9rem;
+  background: url("../i/svg/fon-contact-2.svg") no-repeat;
+  z-index: 2;
+}
+
+.contact__content {
+  position: absolute;
+  top: 8rem;
+  left: 10rem;
+  z-index: 2;
+}
+
+.contact__wrap {
+  width: 40%;
+}
+
+.contact__label {
+  margin-bottom: 1.2rem;
+  color: #fff;
+  background: #323232;
+}
+
+.contact__title {
+  margin-bottom: 0.6rem;
+  color: #fff;
+}
+
+.contact__text {
+  margin-bottom: 2rem;
+  color: #fff;
 }
 
 /*# sourceMappingURL=my.css.map */

@@ -1,0 +1,68 @@
+.wrapper {
+  position: relative;
+  left: -3.4rem;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8rem;
+    left: -4rem;
+    width: 27rem;
+    height: 27rem;
+    background: url("../i/svg/fon-contact-1.svg") no-repeat;
+    z-index: 1;
+  }
+}
+.contact {
+  position: relative;
+  margin-top: -17rem;
+  background: #181818;
+  border-radius: 3rem;
+  overflow: hidden;
+  z-index: 2;
+  &__img {
+    position: relative;
+    padding-bottom: 34%;
+    clip-path: polygon(56.08% 0%, 100% 0%, 100% 100%, 57% 100%, 49% 22%);
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: 100% 100%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25.9rem;
+      height: 25.9rem;
+      background: url("../i/svg/fon-contact-2.svg") no-repeat;
+      z-index: 2;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 8rem;
+    left: 10rem;
+    z-index: 2;
+  }
+  &__wrap {
+    width: 40%;
+  }
+  &__label {
+    margin-bottom: 1.2rem;
+    color: #fff;
+    background: #323232;
+  }
+  &__title {
+    margin-bottom: 0.6rem;
+    color: #fff;
+  }
+  &__text {
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+}
