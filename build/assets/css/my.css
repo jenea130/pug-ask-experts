@@ -518,17 +518,51 @@ input[type="submit"]:disabled {
   }
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 4rem;
+  column-gap: 4rem;
+  padding-bottom: 4.5rem;
+  border-bottom: 1px dashed #989898;
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+}
+
+.footer__col {
+  margin-bottom: 2.6rem;
+}
+
+.footer__logo svg {
+  margin-bottom: 2.3rem;
+  width: 17.5rem;
+  height: 3.3rem;
+}
+
+.footer__fon svg {
+  width: 17.4rem;
+  height: 17.4rem;
+}
+
+.footer__title {
+  margin-bottom: 1.2rem;
+}
+
+.footer__col:nth-of-type(4) .footer__title {
+  margin-bottom: 2rem;
+}
+
 .footer__subtitle {
-  margin-bottom: 0.4rem;
+  margin-bottom: 1rem;
   font-family: var(--font-2);
   font-weight: 600;
   font-size: 16px;
   line-height: 1.05;
   color: #181818;
-}
-
-.footer__list {
-  list-style: disc;
 }
 
 .footer__item {
@@ -548,6 +582,88 @@ input[type="submit"]:disabled {
   height: 6px;
   border-radius: 50%;
   background: #595566;
+}
+
+.footer__group {
+  max-width: 22.6rem;
+}
+
+.footer__group:not(:last-of-type) {
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px dashed #989898;
+}
+
+.footer__email, .footer__phone {
+  display: inline-block;
+  margin-bottom: 3.1rem;
+  font-family: var(--font-1);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.475;
+  color: #181818;
+}
+
+.footer__social {
+  font-family: var(--font-2);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.16;
+  color: #181818;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  padding: 2.4rem 0;
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #595566;
+}
+
+@media screen and (max-width: 576px) {
+  .footer-copyright {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-copyright__col {
+    margin-bottom: 1rem;
+  }
+}
+
+.footer-copyright__col a {
+  display: inline-block;
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #595566;
+  transition: all 0.3s ease;
+}
+
+.footer-copyright__col a:hover {
+  text-decoration: underline;
+  color: var(--text-dark);
+}
+
+.footer-copyright__col:not(:last-of-type) {
+  padding-right: 1rem;
+  border-right: 1px solid #595566;
+}
+
+@media screen and (max-width: 576px) {
+  .footer-copyright__col:not(:last-of-type) {
+    border: none;
+  }
+}
+
+.footer-copyright__col:not(:first-of-type) {
+  padding-left: 1rem;
 }
 
 .btn {
