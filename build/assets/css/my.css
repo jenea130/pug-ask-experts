@@ -156,6 +156,11 @@ p {
   padding: 0 15px;
 }
 
+.rel {
+  position: relative;
+  z-index: 5;
+}
+
 input[type="submit"]:disabled {
   cursor: not-allowed !important;
   opacity: 0.6 !important;
@@ -804,7 +809,15 @@ input[type="submit"]:disabled {
   column-gap: 2.8rem;
 }
 
+@media screen and (max-width: 576px) {
+  .form__group {
+    display: block;
+    width: 100%;
+  }
+}
+
 .form input {
+  display: block;
   padding: 2.2rem 2rem;
   font-family: var(--font-1);
   font-weight: 400;
@@ -815,6 +828,14 @@ input[type="submit"]:disabled {
   border: none;
   outline: none;
   border-radius: 5.4rem;
+}
+
+@media screen and (max-width: 576px) {
+  .form input {
+    max-width: initial;
+    margin-bottom: 1.6rem;
+    text-align: center;
+  }
 }
 
 .form input::-moz-placeholder {
@@ -836,6 +857,13 @@ input[type="submit"]:disabled {
 .form button {
   padding: 1.6rem 2.7rem;
   border-radius: 4.7rem;
+}
+
+@media screen and (max-width: 576px) {
+  .form button {
+    display: block;
+    width: 100%;
+  }
 }
 
 .home-intro {
@@ -2329,6 +2357,18 @@ input[type="submit"]:disabled {
   background: #f5f5f5;
 }
 
+@media screen and (max-width: 992px) {
+  .plan {
+    padding-bottom: 14rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .plan {
+    padding-bottom: 10rem;
+  }
+}
+
 .plan__wrapper {
   display: flex;
   justify-content: space-between;
@@ -2516,6 +2556,13 @@ input[type="submit"]:disabled {
 .wrapper {
   position: relative;
   left: -3.4rem;
+  margin-bottom: 6.9rem;
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper {
+    left: 0;
+  }
 }
 
 .wrapper::before {
@@ -2529,6 +2576,12 @@ input[type="submit"]:disabled {
   z-index: 1;
 }
 
+@media screen and (max-width: 992px) {
+  .wrapper::before {
+    display: none;
+  }
+}
+
 .contact {
   position: relative;
   margin-top: -17rem;
@@ -2538,11 +2591,28 @@ input[type="submit"]:disabled {
   z-index: 2;
 }
 
+@media screen and (max-width: 992px) {
+  .contact {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+
 .contact__img {
   position: relative;
   padding-bottom: 34%;
   -webkit-clip-path: polygon(56.08% 0%, 100% 0%, 100% 100%, 57% 100%, 49% 22%);
   clip-path: polygon(56.08% 0%, 100% 0%, 100% 100%, 57% 100%, 49% 22%);
+}
+
+@media screen and (max-width: 992px) {
+  .contact__img {
+    -webkit-clip-path: none;
+    clip-path: none;
+    padding-bottom: 0;
+  }
 }
 
 .contact__img img {
@@ -2557,15 +2627,10 @@ input[type="submit"]:disabled {
   object-position: 100% 100%;
 }
 
-.contact__img::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 25.9rem;
-  height: 25.9rem;
-  background: url("../i/svg/fon-contact-2.svg") no-repeat;
-  z-index: 2;
+@media screen and (max-width: 992px) {
+  .contact__img img {
+    position: static;
+  }
 }
 
 .contact__content {
@@ -2575,8 +2640,21 @@ input[type="submit"]:disabled {
   z-index: 2;
 }
 
+@media screen and (max-width: 992px) {
+  .contact__content {
+    position: static;
+    padding: 6rem 4rem;
+  }
+}
+
 .contact__wrap {
   width: 40%;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__wrap {
+    width: 100%;
+  }
 }
 
 .contact__label {
@@ -2585,14 +2663,32 @@ input[type="submit"]:disabled {
   background: #323232;
 }
 
+@media screen and (max-width: 992px) {
+  .contact__label {
+    margin-bottom: 3.2rem;
+  }
+}
+
 .contact__title {
   margin-bottom: 0.6rem;
   color: #fff;
 }
 
+@media screen and (max-width: 992px) {
+  .contact__title {
+    margin-bottom: 3.2rem;
+  }
+}
+
 .contact__text {
   margin-bottom: 2rem;
   color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__text {
+    margin-bottom: 6.4rem;
+  }
 }
 
 /*# sourceMappingURL=my.css.map */

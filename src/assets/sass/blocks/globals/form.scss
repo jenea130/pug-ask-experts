@@ -3,8 +3,13 @@
     display: flex;
     align-items: center;
     column-gap: 2.8rem;
+    @media screen and (max-width: 576px) {
+      display: block;
+      width: 100%;
+    }
   }
   input {
+    display: block;
     padding: 2.2rem 2rem;
     font-family: var(--font-1);
     font-weight: 400;
@@ -15,6 +20,11 @@
     border: none;
     outline: none;
     border-radius: 5.4rem;
+    @media screen and (max-width: 576px) {
+      max-width: initial;
+      margin-bottom: 1.6rem;
+      text-align: center;
+    }
     &::placeholder {
       font-family: var(--font-1);
       font-weight: 400;
@@ -26,5 +36,9 @@
   button {
     padding: 1.6rem 2.7rem;
     border-radius: 4.7rem;
+    @media screen and (max-width: 576px) {
+      display: block;
+      width: 100%;
+    }
   }
 }

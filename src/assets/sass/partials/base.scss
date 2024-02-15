@@ -85,6 +85,10 @@ p {
   max-width: 1230px;
   padding: 0 15px;
 }
+.rel {
+  position: relative;
+  z-index: 5;
+}
 
 input[type="submit"]:disabled {
   cursor: not-allowed !important;
