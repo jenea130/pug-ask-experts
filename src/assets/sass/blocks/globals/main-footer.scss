@@ -37,7 +37,14 @@
   }
   &__head {
     position: relative;
-    width: 35.2rem;
+    // width: 35.2rem;
+    padding-right: 13%;
+    @media screen and (max-width: 1200px) {
+      padding-right: 10%;
+    }
+    @media screen and (max-width: 992px) {
+      padding-right: 4%;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -77,7 +84,18 @@
     display: flex;
     justify-content: space-between;
     column-gap: 9.9rem;
-    padding-left: 17.1rem;
+    // padding-left: 17.1rem;
+    padding-left: 14%;
+    @media screen and (max-width: 1200px) {
+      padding-left: 10%;
+      column-gap: 6rem;
+    }
+    @media screen and (max-width: 992px) {
+      padding-left: 4%;
+      column-gap: 3rem;
+    }
+  }
+  &__col {
   }
   &__col:last-child {
     max-width: 35%;
