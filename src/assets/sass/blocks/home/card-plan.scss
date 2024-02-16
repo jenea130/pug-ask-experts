@@ -45,6 +45,12 @@
     font-size: 5.2rem;
     line-height: 1.16;
     color: #fff;
+    span {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
   }
   &__label {
     font-family: "Lato", sans-serif;
@@ -55,6 +61,12 @@
     text-transform: uppercase;
     color: #fff;
     background: #3e3e3e;
+    span {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
   }
   &__list {
     padding: 3.4rem 3rem;

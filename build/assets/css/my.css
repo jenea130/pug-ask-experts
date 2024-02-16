@@ -2432,7 +2432,7 @@ input[type="submit"]:disabled {
   cursor: pointer;
 }
 
-.plan__item:hover .plan__circle {
+.plan__item.active .plan__circle {
   background: var(--contrast);
   border: 1px solid var(--contrast);
 }
@@ -2512,6 +2512,14 @@ input[type="submit"]:disabled {
   color: #fff;
 }
 
+.card-plan__price span {
+  display: none;
+}
+
+.card-plan__price span.active {
+  display: block;
+}
+
 .card-plan__label {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -2521,6 +2529,14 @@ input[type="submit"]:disabled {
   text-transform: uppercase;
   color: #fff;
   background: #3e3e3e;
+}
+
+.card-plan__label span {
+  display: none;
+}
+
+.card-plan__label span.active {
+  display: block;
 }
 
 .card-plan__list {
