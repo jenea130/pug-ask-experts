@@ -1108,6 +1108,7 @@ input[type="submit"]:disabled {
 .page-intro {
   position: relative;
   padding-top: 17.8rem;
+  margin-bottom: 9.5rem;
   height: 62rem;
 }
 
@@ -3005,6 +3006,130 @@ input[type="submit"]:disabled {
   .contact__text {
     margin-bottom: 6.4rem;
   }
+}
+
+.vision {
+  margin-bottom: 15rem;
+}
+
+.vision__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  -moz-column-gap: 12.2rem;
+  column-gap: 12.2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .vision__wrapper {
+    display: block;
+  }
+}
+
+.vision__picture {
+  position: relative;
+}
+
+.vision__dotted {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.vision__square {
+  position: absolute;
+  top: 4rem;
+  right: 5rem;
+  border-radius: 20px;
+  width: 12.6rem;
+  height: 11.3rem;
+  background: var(--contrast);
+  z-index: 2;
+}
+
+.vision__img {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 34.6rem;
+  width: 48.8rem;
+  border-radius: 20px;
+}
+
+.vision__img img {
+  position: absolute;
+  top: 6rem;
+  right: 8rem;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 20px;
+  z-index: 3;
+}
+
+.vision__content {
+  margin-bottom: 17rem;
+  max-width: 48%;
+}
+
+.vision .label {
+  margin-bottom: 2rem;
+  color: #fff;
+  background: var(--contrast);
+}
+
+.vision__title {
+  margin-bottom: 1.4rem;
+}
+
+.vision__text {
+  margin-bottom: 2rem;
+}
+
+.vision__item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 5rem;
+  font-family: var(--font-2);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.16;
+  color: #595566;
+}
+
+.vision__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../i/svg/icon-vision.svg") no-repeat;
+}
+
+.vision__wrap {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 13.5rem;
+  column-gap: 13.5rem;
+}
+
+.vision__num {
+  font-family: var(--contrast);
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 1.16;
+  color: #181818;
+}
+
+.vision__desc {
+  font-family: var(--font-2);
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.16;
+  color: #181818;
 }
 
 /*# sourceMappingURL=my.css.map */
