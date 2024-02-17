@@ -1,8 +1,6 @@
 .main-footer {
   position: relative;
     padding-top: 12.6rem;
-  // padding-bottom: 25%;
-    height: 48.9rem;
   &::before {
     content: "";
     position: absolute;
@@ -24,26 +22,29 @@
     background: var(--text-dark);
     object-fit: cover;
   }
-  &__wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10rem;
-  }
   &__wrapper {
     position: relative;
     display: flex;
+    margin-bottom: 5rem;
     z-index: 2;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
   }
   &__head {
     position: relative;
-    // width: 35.2rem;
     padding-right: 13%;
     @media screen and (max-width: 1200px) {
       padding-right: 10%;
     }
     @media screen and (max-width: 992px) {
-      padding-right: 4%;
+      padding-bottom: 6.4rem;
+      margin-bottom: 6.4rem;
+      border-bottom: 1px solid #707070;
+    }
+    @media screen and (max-width: 576px) {
+      text-align: center;
+      padding-right: 0;
     }
     &::before {
       content: "";
@@ -51,13 +52,15 @@
       top: 0;
       right: 0;
       width: 1px;
-      height: 23.6rem;
+      height: 100%;
       background: #707070;
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
     }
   }
   &__logo {
     svg {
-      margin-bottom: 3.1rem;
       width: 18.1rem;
       height: 3.1rem;
     }
@@ -84,21 +87,30 @@
     display: flex;
     justify-content: space-between;
     column-gap: 9.9rem;
-    // padding-left: 17.1rem;
+    padding-bottom: 5rem;
     padding-left: 14%;
     @media screen and (max-width: 1200px) {
       padding-left: 10%;
       column-gap: 6rem;
     }
     @media screen and (max-width: 992px) {
-      padding-left: 4%;
-      column-gap: 3rem;
+      padding-left: 0;
+    }
+    @media screen and (max-width: 576px) {
+      display: block;
+      padding-bottom: 0;
     }
   }
   &__col {
+    @media screen and (max-width: 576px) {
+      margin-bottom: 3rem;
+    }
   }
   &__col:last-child {
     max-width: 35%;
+    @media screen and (max-width: 576px) {
+      max-width: initial;
+    }
   }
   &__title {
     display: inline-block;
