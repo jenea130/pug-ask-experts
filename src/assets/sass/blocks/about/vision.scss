@@ -47,7 +47,7 @@
     }
   }
   &__content {
-    margin-bottom: 17rem;
+    margin-bottom: 15rem;
     max-width: 48%;
   }
   .label {
@@ -64,7 +64,7 @@
   &__item {
     position: relative;
     margin-bottom: 2rem;
-    padding-left: 5rem;
+    padding-left: 4rem;
     font-family: var(--font-2);
     font-weight: 400;
     font-size: 1.6rem;
@@ -83,10 +83,11 @@
   &__wrap {
     display: flex;
     justify-content: center;
-    column-gap: 13.5rem;
+    column-gap: 13.7rem;
   }
   &__num {
-    font-family: var(--contrast);
+    margin-bottom: 1.2rem;
+    font-family: var(--font-2);
     font-weight: 700;
     font-size: 5rem;
     line-height: 1.16;
