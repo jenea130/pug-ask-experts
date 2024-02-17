@@ -1,6 +1,9 @@
 .main-footer {
   position: relative;
     padding-top: 12.6rem;
+    @media screen and (max-width: 768px) {
+      padding-top: 8rem;
+    }
   &::before {
     content: "";
     position: absolute;
