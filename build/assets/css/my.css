@@ -106,7 +106,7 @@ body::after {
   height: 100vh;
   background: green;
   z-index: 100;
-  display: block;
+  display: none;
 }
 
 *,
@@ -615,6 +615,11 @@ input[type="submit"]:disabled {
   }
 }
 
+.main-footer__logo {
+  display: block;
+  margin-bottom: 1.8rem;
+}
+
 .main-footer__logo svg {
   width: 18.1rem;
   height: 3.1rem;
@@ -719,6 +724,11 @@ input[type="submit"]:disabled {
   font-size: 16px;
   line-height: 1.475;
   color: #fff;
+  transition: color .3s ease;
+}
+
+.main-footer__link:hover {
+  color: var(--accent);
 }
 
 .main-footer__link::before {
@@ -880,7 +890,7 @@ input[type="submit"]:disabled {
 
 .footer-copyright__col a:hover {
   text-decoration: underline;
-  color: var(--text-dark);
+  color: var(--accent);
 }
 
 .footer-copyright__col:not(:last-of-type) {
