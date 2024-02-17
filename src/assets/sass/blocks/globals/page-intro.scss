@@ -1,0 +1,35 @@
+.page-intro {
+  position: relative;
+  padding-top: 17.8rem;
+  height: 62rem;
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  &__content {
+    max-width: 78.8rem;
+    border-radius: 2.9rem;
+    padding: 4.8rem 6rem 5.8rem 6rem;
+    backdrop-filter: blur(1.1rem);
+    background: rgba(255, 255, 255, 0.75);
+  }
+  .label {
+    margin-bottom: 2.1rem;
+  }
+  &__title {
+    font-family: var(--font-2);
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 1.16;
+    color: #181818;
+  }
+}
