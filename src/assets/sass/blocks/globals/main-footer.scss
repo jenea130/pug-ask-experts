@@ -77,6 +77,8 @@
     line-height: 1.16;
     color: #fff;
     a {
+      display: inline-block;
+      margin-right: 0.7rem;
       font-family: var(--font-2);
       font-weight: 600;
       font-size: 2rem;
