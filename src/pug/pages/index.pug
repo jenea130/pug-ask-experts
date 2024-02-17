@@ -7,10 +7,10 @@ block title
 	title Main page
 
 block content
-	//- include ../blocks/globals/top-header
-	//- include ../blocks/globals/main-header
+	include ../blocks/globals/top-header
+	include ../blocks/globals/main-header
 	//- include ../blocks/home/home-intro
-	.container 
+	//- .container 
 	//- 	include ../blocks/home/features
 	//- 	include ../blocks/home/about-me
 	//- include ../blocks/home/services
@@ -25,9 +25,6 @@ block content
 	//- .container
 		//- include ../blocks/home/contact
 	include ../blocks/globals/main-footer
-	//- .container
-		//- include ../blocks/globals/footer
-	//- 	include ../blocks/globals/footer-copyright
 
 block scripts
 	script(src="assets/libs/jquery-3.7.1.min.js")

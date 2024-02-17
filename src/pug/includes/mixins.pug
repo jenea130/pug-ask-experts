@@ -1,3 +1,11 @@
 mixin icon(icon, location)
   svg(class="" + icon)
     use(xlink:href="#" + location )
+
+mixin pageIntro(label, title, img)
+  .page-intro
+    img.page-intro(src=img, alt="")
+    .container 
+      .page-intro__content
+        .label= label
+        h1.page-intro__title= title
