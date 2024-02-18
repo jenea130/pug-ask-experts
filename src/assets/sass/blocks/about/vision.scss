@@ -138,6 +138,9 @@
     font-size: 5rem;
     line-height: 1.16;
     color: #181818;
+    @media screen and (max-width: 576px) {
+      font-size: 4rem;
+    }
   }
   &__desc {
     font-family: var(--font-2);
