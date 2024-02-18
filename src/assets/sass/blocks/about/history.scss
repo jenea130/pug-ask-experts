@@ -43,8 +43,8 @@
   }
   &__dotted {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -0.6rem;
+    right: -5rem;
     z-index: 1;
     @media screen and (max-width: 992px) {
       right: -5rem;
@@ -55,8 +55,8 @@
   }
   &__square {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 2.4rem;
+    left: 6.7rem;
     width: 16.8rem;
     height: 18.3rem;
     background: var(--contrast);
@@ -68,8 +68,8 @@
   }
   &__video {
     position: relative;
-    top: 10%;
-    left: 5%;
+    top: 6%;
+    left: 10%;
     width: 89%;
     z-index: 2;
     @media screen and (max-width: 992px) {

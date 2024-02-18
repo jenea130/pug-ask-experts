@@ -1276,7 +1276,7 @@ input[type="submit"]:disabled {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 10px 0 10px 17.3px;
+  border-width: 9px 0 9px 15px;
   border-color: transparent transparent transparent #181818;
 }
 
@@ -3334,7 +3334,7 @@ input[type="submit"]:disabled {
 }
 
 .our-core {
-  padding: 9.8rem 0;
+  padding: 9.8rem 0 10.3rem;
   background: #f5f5f5;
 }
 
@@ -3543,8 +3543,8 @@ input[type="submit"]:disabled {
 
 .history__dotted {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -0.6rem;
+  right: -5rem;
   z-index: 1;
 }
 
@@ -3562,8 +3562,8 @@ input[type="submit"]:disabled {
 
 .history__square {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 2.4rem;
+  left: 6.7rem;
   width: 16.8rem;
   height: 18.3rem;
   background: var(--contrast);
@@ -3579,8 +3579,8 @@ input[type="submit"]:disabled {
 
 .history__video {
   position: relative;
-  top: 10%;
-  left: 5%;
+  top: 6%;
+  left: 10%;
   width: 89%;
   z-index: 2;
 }
