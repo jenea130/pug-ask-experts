@@ -3012,6 +3012,18 @@ input[type="submit"]:disabled {
   margin-bottom: 15rem;
 }
 
+@media screen and (max-width: 992px) {
+  .vision {
+    margin-bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .vision {
+    margin-bottom: 7rem;
+  }
+}
+
 .vision__wrapper {
   display: flex;
   flex-direction: row-reverse;
@@ -3037,6 +3049,12 @@ input[type="submit"]:disabled {
   z-index: 1;
 }
 
+@media screen and (max-width: 992px) {
+  .vision__dotted {
+    display: none;
+  }
+}
+
 .vision__square {
   position: absolute;
   top: 4rem;
@@ -3048,6 +3066,12 @@ input[type="submit"]:disabled {
   z-index: 2;
 }
 
+@media screen and (max-width: 992px) {
+  .vision__square {
+    display: none;
+  }
+}
+
 .vision__img {
   position: relative;
   bottom: 0;
@@ -3055,6 +3079,14 @@ input[type="submit"]:disabled {
   height: 34.6rem;
   width: 48.8rem;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .vision__img {
+    margin-bottom: 4rem;
+    width: auto;
+    height: auto;
+  }
 }
 
 .vision__img img {
@@ -3069,9 +3101,28 @@ input[type="submit"]:disabled {
   z-index: 3;
 }
 
+@media screen and (max-width: 992px) {
+  .vision__img img {
+    position: static;
+  }
+}
+
 .vision__content {
   margin-bottom: 15rem;
   max-width: 48%;
+}
+
+@media screen and (max-width: 992px) {
+  .vision__content {
+    max-width: initial;
+    margin-bottom: 7rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .vision__content {
+    margin-bottom: 5rem;
+  }
 }
 
 .vision .label {
@@ -3102,11 +3153,18 @@ input[type="submit"]:disabled {
 .vision__item::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -0.4rem;
   left: 0;
   width: 100%;
   height: 100%;
   background: url("../i/svg/icon-vision.svg") no-repeat;
+}
+
+@media screen and (max-width: 992px) {
+  .vision__item::before {
+    height: 180%;
+    top: -1rem;
+  }
 }
 
 .vision__wrap {
@@ -3114,6 +3172,29 @@ input[type="submit"]:disabled {
   justify-content: center;
   -moz-column-gap: 13.7rem;
   column-gap: 13.7rem;
+  row-gap: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .vision__wrap {
+    -moz-column-gap: 6rem;
+    column-gap: 6rem;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .vision__wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .vision__col {
+    flex: 0 0 35%;
+    text-align: center;
+  }
 }
 
 .vision__num {
