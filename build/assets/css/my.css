@@ -3694,6 +3694,7 @@ input[type="submit"]:disabled {
   border-radius: 2.9rem;
   -webkit-backdrop-filter: blur(11px);
   backdrop-filter: blur(11px);
+  transition: all 0.3s ease;
 }
 
 .our-team__body {
@@ -3730,6 +3731,7 @@ input[type="submit"]:disabled {
   display: inline-flex;
   padding: 0.8rem;
   border-radius: 50%;
+  transition: all .3s ease;
 }
 
 .our-team__link:hover {

@@ -73,6 +73,7 @@
     background: var(--text-dark);
     border-radius: 2.9rem;
     backdrop-filter: blur(11px);
+    transition: all 0.3s ease;
   }
   &__body {
     display: flex;
@@ -103,6 +104,7 @@
     display: inline-flex;
     padding: 0.8rem;
     border-radius: 50%;
+    transition: all .3s ease;
     &:hover {
       background: var(--accent);
     }
