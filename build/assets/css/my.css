@@ -347,14 +347,6 @@ input[type="submit"]:disabled {
   column-gap: 1.1rem;
 }
 
-.main-header__logo span {
-  color: #fff;
-  font-family: var(--font-2);
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 1;
-}
-
 @media screen and (max-width: 992px) {
   .main-header__logo {
     margin-right: auto;
