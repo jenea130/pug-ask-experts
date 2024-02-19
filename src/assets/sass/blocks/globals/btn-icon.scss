@@ -11,6 +11,13 @@
   color: #353535;
   background: #fff;
   border-radius: 4.2rem;
+  &:hover svg circle {
+    fill: #ccc;
+  }
+  svg > circle {
+    fill: #ffc42b;
+    transition: fill .5s ease;
+  }
 
   &.btn-icon--mobile {
     @media screen and (max-width: 575px) {
