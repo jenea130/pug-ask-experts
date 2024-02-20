@@ -34,9 +34,6 @@
   }
   &__page {
     position: relative;
-    // padding-bottom: 100%;
-    // width: 243px;
-    // height: 344px;
     &::before {
       content: "";
       position: absolute;
@@ -62,14 +59,12 @@
   }
   &__img {
     position: relative;
-    // padding-bottom: 80%;
     height: 40rem;
     img {
       position: absolute;
       bottom: -13.5px;
       left: 5.2rem;
       width: 43.5rem;
-      //   height: 40rem;
       height: 100%;
       object-fit: cover;
       border-radius: 3rem 3rem 0 0;
