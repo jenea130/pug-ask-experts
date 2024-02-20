@@ -4214,6 +4214,24 @@ input[type="submit"]:disabled {
   background: #f5f5f5;
 }
 
+@media screen and (max-width: 992px) {
+  .pricing {
+    padding: 12rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pricing {
+    padding: 10rem 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .pricing {
+    padding: 8rem 0;
+  }
+}
+
 .pricing__content {
   text-align: center;
 }
@@ -4238,6 +4256,13 @@ input[type="submit"]:disabled {
   .pricing__wrapper {
     flex-wrap: wrap;
     justify-content: center;
+    row-gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pricing__wrapper {
+    display: block;
   }
 }
 
@@ -4245,6 +4270,13 @@ input[type="submit"]:disabled {
   flex: 0 0 calc(100% / 3 - 4rem);
   margin: 0 2rem;
   min-width: 38.7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .pricing__col {
+    max-width: 30.6rem;
+    margin: 0 auto 3rem;
+  }
 }
 
 /*# sourceMappingURL=my.css.map */
