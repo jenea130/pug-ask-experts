@@ -6,6 +6,9 @@
   @media screen and (max-width: 992px) {
     padding-top: 30rem;
   }
+  @media screen and (max-width: 768px) {
+    padding-top: 35rem;
+  }
   &__img {
     position: absolute;
     top: 0;
@@ -14,6 +17,7 @@
     height: 100%;
     object-fit: cover;
     z-index: 1;
+    object-position: 90% 0;
   }
   .container {
     position: relative;
