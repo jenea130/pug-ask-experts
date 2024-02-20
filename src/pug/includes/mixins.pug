@@ -2,8 +2,8 @@ mixin icon(icon, location)
   svg(class="" + icon)
     use(xlink:href="#" + location )
 
-mixin pageIntro(label, title, img)
-  .page-intro
+mixin pageIntro(label, title, img, class_name = 'stop')
+  .page-intro(class=class_name)
     img.page-intro__img(src=img, alt="")
     .container 
       .page-intro__content

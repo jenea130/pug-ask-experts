@@ -9,6 +9,11 @@
   @media screen and (max-width: 768px) {
     padding-top: 35rem;
   }
+  &.page-intro--services {
+    .page-intro__img {
+      object-position: 90% 0;
+    }
+  }
   &__img {
     position: absolute;
     top: 0;
@@ -17,7 +22,6 @@
     height: 100%;
     object-fit: cover;
     z-index: 1;
-    object-position: 90% 0;
   }
   .container {
     position: relative;

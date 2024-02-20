@@ -1124,6 +1124,11 @@ input[type="submit"]:disabled {
   }
 }
 
+.page-intro.page-intro--services .page-intro__img {
+  -o-object-position: 90% 0;
+  object-position: 90% 0;
+}
+
 .page-intro__img {
   position: absolute;
   top: 0;
@@ -1133,8 +1138,6 @@ input[type="submit"]:disabled {
   -o-object-fit: cover;
   object-fit: cover;
   z-index: 1;
-  -o-object-position: 90% 0;
-  object-position: 90% 0;
 }
 
 .page-intro .container {
@@ -3137,8 +3140,7 @@ input[type="submit"]:disabled {
 }
 
 .vision {
-  margin-top: 9.5rem;
-  margin-bottom: 15rem;
+  padding: 9.5rem 0 15rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -3989,6 +3991,7 @@ input[type="submit"]:disabled {
   max-width: 38.7rem;
   background: #ebebeb;
   border-radius: 2rem;
+  transition: all .3s ease;
 }
 
 @media screen and (max-width: 992px) {
@@ -3999,16 +4002,18 @@ input[type="submit"]:disabled {
 
 @media screen and (max-width: 576px) {
   .control__card {
-    margin: 0  auto 2rem;
+    margin: 0 auto 2rem;
     display: block;
   }
 }
 
-.control__card:hover,
+.control__card:hover {
+  background: var(--text-dark);
+}
+
 .control__card:hover .control__subtitle,
 .control__card:hover .control__text {
   color: #fff;
-  background: var(--text-dark);
 }
 
 .control__item {
@@ -4027,6 +4032,11 @@ input[type="submit"]:disabled {
 
 .control__subtitle {
   margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.control__text {
+  transition: color 0.3s ease;
 }
 
 /*# sourceMappingURL=my.css.map */

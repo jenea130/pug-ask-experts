@@ -20,7 +20,7 @@
     margin: 0 auto;
     max-width: 60%;
     @media screen and (max-width: 576px) {
-        max-width: 80%;
+      max-width: 80%;
     }
   }
   &__wrapper {
@@ -39,20 +39,22 @@
     max-width: 38.7rem;
     background: #ebebeb;
     border-radius: 2rem;
+    transition: all .3s ease;
     @media screen and (max-width: 992px) {
       flex: 0 0 calc(100% / 2 - 2rem);
     }
     @media screen and (max-width: 576px) {
-        margin: 0  auto 2rem;
-        display: block;
+      margin: 0 auto 2rem;
+      display: block;
     }
-    &:hover,
-    &:hover .control__subtitle,
-    &:hover .control__text {
-      color: #fff;
+    &:hover {
       background: var(--text-dark);
+      .control__subtitle,
+      .control__text {
+        color: #fff;
+      }
     }
-  }
+  } 
   &__item {
     padding: 4.9rem 0;
   }
@@ -66,5 +68,9 @@
   }
   &__subtitle {
     margin-bottom: 1rem;
+    transition: color 0.3s ease;
+  }
+  &__text {
+    transition: color 0.3s ease;
   }
 }
