@@ -4,7 +4,7 @@
   background: #fff;
   &__body {
     position: relative;
-    padding: 3.3rem 3rem 3rem;
+    padding: 3.3rem 3rem 2.6rem;
     border-radius: 2.1rem;
     background: #303030;
     overflow: hidden;
@@ -25,7 +25,7 @@
     }
   }
   &__subtitle {
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.9rem;
     color: #fff;
   }
   &__desc {
@@ -69,11 +69,11 @@
     }
   }
   &__list {
-    padding: 3.4rem 3rem;
+    padding: 3.1rem 2.8rem;
     li {
       display: flex;
       align-items: center;
-      column-gap: 3rem;
+      column-gap: 1.2rem;
       span {
         font-family: "Lato", sans-serif;
         font-weight: 400;
@@ -84,6 +84,7 @@
     }
   }
   &__btn {
+    padding: 1.6rem 3.2rem;
     width: 100%;
     border: 1px solid #d6d6d6;
     &:hover {
