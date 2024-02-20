@@ -1,0 +1,29 @@
+.pricing {
+  padding: 14.9rem 0;
+  background: #f5f5f5;
+  &__content {
+    text-align: center;
+  }
+  .label {
+    margin-bottom: 2.2rem;
+    color: #fff;
+    background: var(--contrast);
+  }
+  &__title {
+    margin-bottom: 4rem;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -2rem;
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__col {
+    flex: 0 0 calc(100% / 3 - 4rem);
+    margin: 0 2rem;
+    min-width: 38.7rem;
+  }
+}

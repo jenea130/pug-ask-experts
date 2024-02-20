@@ -4208,4 +4208,42 @@ input[type="submit"]:disabled {
   color: var(--text-dark);
 }
 
+.pricing {
+  padding: 14.9rem 0;
+  background: #f5f5f5;
+}
+
+.pricing__content {
+  text-align: center;
+}
+
+.pricing .label {
+  margin-bottom: 2.2rem;
+  color: #fff;
+  background: var(--contrast);
+}
+
+.pricing__title {
+  margin-bottom: 4rem;
+}
+
+.pricing__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .pricing__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.pricing__col {
+  flex: 0 0 calc(100% / 3 - 4rem);
+  margin: 0 2rem;
+  min-width: 38.7rem;
+}
+
 /*# sourceMappingURL=my.css.map */
