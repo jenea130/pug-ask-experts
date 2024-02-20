@@ -1,9 +1,11 @@
 .video {
   position: relative;
   height: 36.9rem;
-  border-radius: 28px;
+  border-radius: 2.8rem;
   overflow: hidden;
-
+  @media screen and (max-width: 576px) {
+    border-radius: 2rem;
+  }
   &.active {
     &::before {
       opacity: 0;
@@ -12,7 +14,7 @@
     }
     .video__play {
       // transform: translateY(-600px);
-      transform: translateX(-1000px)
+      transform: translateX(-1000px);
     }
     .video__img {
       // transform: translateY(700px);
@@ -53,6 +55,7 @@
     z-index: 2;
     transition: all 0.8s;
     transition-delay: 1.2s;
+    pointer-events: none;
   }
 
   &__play {
@@ -72,7 +75,7 @@
     cursor: pointer;
     &:hover .video__circle {
       background: var(--accent);
-      opacity: .7;
+      opacity: 0.7;
     }
   }
   &__back {
@@ -95,7 +98,7 @@
     height: 67px;
     border-radius: 50%;
     background: #fff;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
   }
   &__triangle {
     position: relative;

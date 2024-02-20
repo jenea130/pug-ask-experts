@@ -39,6 +39,7 @@
     max-width: 90%;
     @media screen and (max-width: 576px) {
       height: auto;
+      max-width: initial;
     }
   }
   &__dotted {
@@ -62,6 +63,9 @@
     background: var(--contrast);
     border-radius: 20px;
     z-index: 1;
+    @media screen and (max-width: 768px) {
+      left: 4rem;
+    }
     @media screen and (max-width: 576px) {
       display: none;
     }
@@ -72,8 +76,9 @@
     left: 10%;
     width: 89%;
     z-index: 2;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 576px) {
       width: 100%;
+      left: 0;
     }
   }
 }
