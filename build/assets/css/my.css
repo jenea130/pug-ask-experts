@@ -4479,6 +4479,24 @@ input[type="submit"]:disabled {
   background: #f5f5f5;
 }
 
+@media screen and (max-width: 992px) {
+  .projections {
+    padding: 12rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projections {
+    padding: 10rem 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .projections {
+    padding: 8rem 0;
+  }
+}
+
 .projections__header {
   display: flex;
   justify-content: space-between;
@@ -4486,8 +4504,22 @@ input[type="submit"]:disabled {
   margin-bottom: 7rem;
 }
 
+@media screen and (max-width: 576px) {
+  .projections__header {
+    display: block;
+    margin-bottom: 4rem;
+  }
+}
+
 .projections__content {
   max-width: 54%;
+}
+
+@media screen and (max-width: 576px) {
+  .projections__content {
+    margin-bottom: 4rem;
+    max-width: initial;
+  }
 }
 
 .projections__logo {
