@@ -2673,7 +2673,7 @@ input[type="submit"]:disabled {
 
 .reviews__wrapper {
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 0.2rem;
 }
 
 .reviews .slick-list {
@@ -2695,7 +2695,7 @@ input[type="submit"]:disabled {
   align-items: center;
   -moz-column-gap: 1.3rem;
   column-gap: 1.3rem;
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.7rem;
 }
 
 .reviews__ava img {
@@ -2712,6 +2712,11 @@ input[type="submit"]:disabled {
 }
 
 .reviews__label {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.475;
+  letter-spacing: normal;
   color: #fff;
   text-transform: none;
   background: var(--contrast);
@@ -2727,8 +2732,8 @@ input[type="submit"]:disabled {
 .reviews__text::before {
   content: "";
   position: absolute;
-  top: -3.8rem;
-  left: 80%;
+  top: -3.1rem;
+  left: 74.2%;
   width: 6.6rem;
   height: 6.6rem;
   background: url("../i/svg/icon-cite.svg") no-repeat;
