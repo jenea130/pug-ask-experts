@@ -4622,6 +4622,10 @@ input[type="submit"]:disabled {
   transition: all 0.3s ease;
 }
 
+.expect {
+  margin-bottom: 200rem;
+}
+
 .expect__wrapper {
   display: flex;
   -moz-column-gap: 0rem;
@@ -4629,9 +4633,27 @@ input[type="submit"]:disabled {
   height: 46.2rem;
 }
 
+@media screen and (max-width: 992px) {
+  .expect__wrapper {
+    display: block;
+  }
+}
+
 .expect__picture {
   position: relative;
   flex: 0 0 60%;
+}
+
+@media screen and (max-width: 992px) {
+  .expect__picture {
+    margin-bottom: 16rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .expect__picture {
+    margin-bottom: 6rem;
+  }
 }
 
 .expect__dotted {
@@ -4643,6 +4665,18 @@ input[type="submit"]:disabled {
   z-index: 1;
 }
 
+@media screen and (max-width: 992px) {
+  .expect__dotted {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .expect__dotted {
+    display: none;
+  }
+}
+
 .expect__square {
   position: absolute;
   top: 4.3rem;
@@ -4652,6 +4686,18 @@ input[type="submit"]:disabled {
   background: var(--contrast);
   border-radius: 2rem;
   z-index: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .expect__square {
+    left: 6%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .expect__square {
+    display: none;
+  }
 }
 
 .expect__img {
@@ -4669,6 +4715,19 @@ input[type="submit"]:disabled {
   object-fit: cover;
   z-index: 2;
   border-radius: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .expect__img img {
+    left: 11%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .expect__img img {
+    position: static;
+    width: 100%;
+  }
 }
 
 .expect__content {
@@ -4702,7 +4761,7 @@ input[type="submit"]:disabled {
 }
 
 .expect__desc::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -3.9rem;
