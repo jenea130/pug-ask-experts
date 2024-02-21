@@ -1795,7 +1795,7 @@ input[type="submit"]:disabled {
   top: 0;
   right: 0;
   width: 90%;
-  height: 86%;
+  height: 86.2%;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 2.9rem;
@@ -1965,7 +1965,7 @@ input[type="submit"]:disabled {
 
 .services__arrow {
   position: absolute;
-  top: 10rem;
+  top: 20rem;
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
@@ -1991,11 +1991,11 @@ input[type="submit"]:disabled {
 }
 
 .services__arrow--prev {
-  left: -1rem;
+  left: -3.6rem;
 }
 
 .services__arrow--next {
-  right: -1rem;
+  right: -3.6rem;
 }
 
 .services__wrapper {
@@ -2013,7 +2013,7 @@ input[type="submit"]:disabled {
 .services__item {
   display: flex;
   flex-direction: column;
-  padding: 2.2rem 2.2rem 3.8rem 2.2rem;
+  padding: 2.2rem 2.2rem 2.4rem 2.2rem;
   background: #ebebeb;
   border-radius: 2rem;
 }

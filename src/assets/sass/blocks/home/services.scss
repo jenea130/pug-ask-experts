@@ -24,7 +24,7 @@
   }
   &__arrow {
     position: absolute;
-    top: 10rem;
+    top: 20rem;
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
@@ -46,10 +46,10 @@
     }
   }
   &__arrow--prev {
-    left: -1rem;
+    left: -3.6rem;
   }
   &__arrow--next {
-    right: -1rem;
+    right: -3.6rem;
   }
   
   &__wrapper {
@@ -65,7 +65,7 @@
   &__item {
     display: flex;
     flex-direction: column;
-    padding: 2.2rem 2.2rem 3.8rem 2.2rem;
+    padding: 2.2rem 2.2rem 2.4rem 2.2rem;
     background: #ebebeb;
     border-radius: 2rem;
   }
