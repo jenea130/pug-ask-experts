@@ -2013,7 +2013,7 @@ input[type="submit"]:disabled {
 .services__item {
   display: flex;
   flex-direction: column;
-  padding: 2.2rem 2.2rem 2.4rem 2.2rem;
+  padding: 2.2rem 2.2rem 3.4rem 2.2rem;
   background: #ebebeb;
   border-radius: 2rem;
 }
@@ -2052,7 +2052,10 @@ input[type="submit"]:disabled {
 }
 
 .services__btn {
+  display: block;
+  padding: 1.1rem 3.6rem;
   margin-top: auto;
+  background: #fff;
 }
 
 .experience {
