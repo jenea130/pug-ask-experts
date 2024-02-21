@@ -11,7 +11,7 @@
     max-width: 54%;
   }
   &__logo {
-    margin-bottom: 1.7rem;
+    margin-bottom: 1.3rem;
     svg {
       height: 7.1rem;
     }
@@ -22,7 +22,7 @@
   &__arrows {
     display: flex;
     justify-content: space-between;
-    column-gap: 1rem;
+    column-gap: 3rem;
   }
   &__arrow {
     width: 7rem;
@@ -47,6 +47,7 @@
     }
   }
   &__wrapper {
+    display: flex;
   }
 
   .slick-list {
@@ -77,7 +78,7 @@
     }
   }
   &__icon {
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.8rem;
     svg {
       fill: var(--text-dark);
       transition: all 1s ease;

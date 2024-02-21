@@ -4491,7 +4491,7 @@ input[type="submit"]:disabled {
 }
 
 .projections__logo {
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.3rem;
 }
 
 .projections__logo svg {
@@ -4505,8 +4505,8 @@ input[type="submit"]:disabled {
 .projections__arrows {
   display: flex;
   justify-content: space-between;
-  -moz-column-gap: 1rem;
-  column-gap: 1rem;
+  -moz-column-gap: 3rem;
+  column-gap: 3rem;
 }
 
 .projections__arrow {
@@ -4533,6 +4533,10 @@ input[type="submit"]:disabled {
   transform: translate(-50%, -50%);
   stroke: white;
   transition: all 0.3s ease;
+}
+
+.projections__wrapper {
+  display: flex;
 }
 
 .projections .slick-list {
@@ -4568,7 +4572,7 @@ input[type="submit"]:disabled {
 }
 
 .projections__icon {
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.8rem;
 }
 
 .projections__icon svg {
