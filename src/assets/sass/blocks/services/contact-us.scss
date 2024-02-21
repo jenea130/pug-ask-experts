@@ -1,8 +1,25 @@
 .contact-us {
   padding: 15.1rem 0;
+  @media screen and (max-width: 992px) {
+    padding: 12rem 10rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 10rem 0;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 8rem 0;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 992px) {
+        display: block;
+    }
+  }
+  &__content {
+    @media screen and (max-width: 992px) {
+        margin-bottom: 5rem;
+    }
   }
   .label {
     margin-bottom: 0.6rem;

@@ -375,7 +375,7 @@ input[type="submit"]:disabled {
 
 @media screen and (max-width: 992px) {
   .main-header .btn-icon {
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
 }
 
@@ -916,6 +916,7 @@ input[type="submit"]:disabled {
   outline: none;
   border-radius: 5.5rem;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -1050,6 +1051,13 @@ input[type="submit"]:disabled {
   margin-bottom: 2.8rem;
 }
 
+@media screen and (max-width: 576px) {
+  .form__wrap {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+
 .form__wrap .form__group {
   flex: 1;
 }
@@ -1068,7 +1076,7 @@ input[type="submit"]:disabled {
 .form input[type="tel"],
 .form input[type="email"],
 .form textarea {
-  padding: 2rem 3.3rem;
+  padding: 2rem 3.3rem 2rem 0;
   width: 100%;
   font-family: var(--font-1);
   font-weight: 400;
@@ -1080,7 +1088,18 @@ input[type="submit"]:disabled {
   border-radius: 5.4rem;
 }
 
+@media screen and (max-width: 576px) {
+  .form input[type="text"],
+  .form input[type="tel"],
+  .form input[type="email"],
+  .form textarea {
+    margin-bottom: 3rem;
+  }
+}
+
 .form textarea {
+  padding: 2rem 3.3rem;
+  text-indent: 0;
   border: 1px solid #c1c1c1;
   border-radius: 2.2rem;
   height: 15.7rem;
@@ -4338,9 +4357,39 @@ input[type="submit"]:disabled {
   padding: 15.1rem 0;
 }
 
+@media screen and (max-width: 992px) {
+  .contact-us {
+    padding: 12rem 10rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us {
+    padding: 10rem 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact-us {
+    padding: 8rem 0;
+  }
+}
+
 .contact-us__wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+  .contact-us__wrapper {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact-us__content {
+    margin-bottom: 5rem;
+  }
 }
 
 .contact-us .label {
