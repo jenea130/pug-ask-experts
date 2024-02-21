@@ -1,7 +1,6 @@
 .experience {
   overflow: hidden;
   position: relative;
-  // height: 52.8rem;
   background: var(--accent);
   z-index: 1;
   img {
@@ -26,7 +25,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 13.2rem 0;
+    padding: 13.5rem 2.1rem 13.5rem 0;
     z-index: 2;
     @media screen and (max-width: 992px) {
       display: block;
@@ -49,12 +48,16 @@
     margin-bottom: 2.2rem;
   }
   &__title {
-    margin-bottom: 2rem;
+    margin-bottom: 2.2rem;
+  }
+  &__text {
+    font-size: 1.8rem;
   }
   &__counter {
     display: flex;
     justify-content: space-between;
-    column-gap: 4.6rem;
+    column-gap: 7.5rem;
+    padding-top: 2.3rem;
     @media screen and (max-width: 1200px) {
       column-gap: 3rem;
       justify-content: center;
