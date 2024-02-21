@@ -1198,6 +1198,11 @@ input[type="submit"]:disabled {
   }
 }
 
+.page-intro.page-intro--single-service {
+  height: 48.7rem;
+  padding-top: 14.4rem;
+}
+
 .page-intro.page-intro--services .page-intro__img {
   -o-object-position: 90% 0;
   object-position: 90% 0;
@@ -1220,6 +1225,7 @@ input[type="submit"]:disabled {
 }
 
 .page-intro__content {
+  display: inline-block;
   max-width: 78.8rem;
   border-radius: 2.9rem;
   padding: 4.8rem 6rem 5.8rem 6rem;
@@ -4466,6 +4472,117 @@ input[type="submit"]:disabled {
 
 .contact-us__form {
   flex: 0 0 57.3%;
+}
+
+.projections {
+  padding: 14.8rem 0 14.9rem;
+  background: #f5f5f5;
+}
+
+.projections__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 7rem;
+}
+
+.projections__content {
+  max-width: 54%;
+}
+
+.projections__logo {
+  margin-bottom: 1.7rem;
+}
+
+.projections__logo svg {
+  height: 7.1rem;
+}
+
+.projections__title {
+  margin-bottom: 1.3rem;
+}
+
+.projections__arrows {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.projections__arrow {
+  width: 7rem;
+  height: 7rem;
+  background: #000;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.projections__arrow:hover {
+  background: #ffc32b;
+}
+
+.projections__arrow:hover svg {
+  stroke: #141414;
+}
+
+.projections__arrow svg {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  stroke: white;
+  transition: all 0.3s ease;
+}
+
+.projections .slick-list {
+  margin: 0 -2.1rem;
+}
+
+.projections .slick-slide {
+  margin: 0 2.1rem;
+}
+
+.projections__item {
+  padding: 4.4rem 3.5rem;
+  border-radius: 2rem;
+  background: #ebebeb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.projections__item:hover {
+  background: var(--text-dark);
+}
+
+.projections__item:hover .projections__subtitle {
+  color: #fff;
+}
+
+.projections__item:hover .projections__desc {
+  color: #fff;
+}
+
+.projections__item:hover .projections__icon svg {
+  fill: var(--accent);
+}
+
+.projections__icon {
+  margin-bottom: 2.4rem;
+}
+
+.projections__icon svg {
+  fill: var(--text-dark);
+  transition: all 1s ease;
+}
+
+.projections__subtitle {
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.projections__desc {
+  transition: all 0.3s ease;
 }
 
 /*# sourceMappingURL=my.css.map */

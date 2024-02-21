@@ -2,6 +2,7 @@ $(document).ready(function () {
   const slider = $(".services__wrapper");
   const experience_item = document.querySelector(".experience__item");
   const reviews_slider = $(".reviews__wrapper");
+  const projections_slider = $(".projections__wrapper");
 
   if (experience_item) {
     experienceRange();
@@ -13,6 +14,10 @@ $(document).ready(function () {
 
   if (reviews_slider) {
     reviewsSlider();
+  }
+
+  if (projections_slider) {
+    projectionsSlider();
   }
 
   function servicesSlider() {
@@ -104,6 +109,43 @@ $(document).ready(function () {
     });
     reviews__arrow_next.on("click", function () {
       reviews_slider.slick("slickNext");
+    });
+  }
+
+  function projectionsSlider() {
+    projections_slider.slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      speed: 1000,
+      arrows: false,
+      dots: false,
+      // autoplay: true,
+      autoplaySpeed: 2000,
+      easing: "ease",
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+
+    const projections__arrow_prev = $(".projections__arrow--prev");
+    const projections__arrow_next = $(".projections__arrow--next");
+    projections__arrow_prev.on("click", function () {
+      projections_slider.slick("slickPrev");
+    });
+    projections__arrow_next.on("click", function () {
+      projections_slider.slick("slickNext");
     });
   }
 });
