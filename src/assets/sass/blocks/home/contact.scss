@@ -50,19 +50,8 @@
       object-position: 100% 100%;
       @media screen and (max-width: 992px) {
         position: static;
-        // height: auto;
       }
     }
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   width: 25.9rem;
-    //   height: 25.9rem;
-    //   background: url("../i/svg/fon-contact-2.svg") no-repeat;
-    //   z-index: 2;
-    // }
   }
   &__content {
     position: absolute;
