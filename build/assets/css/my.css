@@ -2939,7 +2939,7 @@ input[type="submit"]:disabled {
 }
 
 .plan__title {
-  margin-bottom: 3.3rem;
+  margin-bottom: 2rem;
 }
 
 .plan__text {
@@ -3033,7 +3033,7 @@ input[type="submit"]:disabled {
   align-items: center;
   -moz-column-gap: 1rem;
   column-gap: 1rem;
-  padding-top: 2rem;
+  padding-top: 2.8rem;
   border-top: 1px dashed #565656;
 }
 
@@ -3073,7 +3073,7 @@ input[type="submit"]:disabled {
 }
 
 .card-plan__list {
-  padding: 3.1rem 2.8rem;
+  padding: 3.6rem 2.8rem 3.8rem;
 }
 
 .card-plan__list li {
@@ -3087,7 +3087,7 @@ input[type="submit"]:disabled {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 2.5;
+  line-height: 2.6;
   color: #595566;
 }
 
