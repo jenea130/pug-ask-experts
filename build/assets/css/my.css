@@ -4623,7 +4623,7 @@ input[type="submit"]:disabled {
 }
 
 .expect {
-  margin-bottom: 200rem;
+  margin-bottom: 10rem;
 }
 
 .expect__wrapper {
@@ -4636,6 +4636,7 @@ input[type="submit"]:disabled {
 @media screen and (max-width: 992px) {
   .expect__wrapper {
     display: block;
+    height: auto;
   }
 }
 
@@ -4768,6 +4769,30 @@ input[type="submit"]:disabled {
   width: 30px;
   height: 30px;
   background: url("../i/svg/icon-list.svg") no-repeat;
+}
+
+.brands-light {
+  padding: 3rem 3rem;
+  height: 23.7rem;
+  background: #fff;
+  opacity: 0.51;
+}
+
+@media screen and (max-width: 1200px) {
+  .brands-light {
+    height: auto;
+  }
+}
+
+.brands-light__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 6rem;
+  column-gap: 6rem;
+  gap: 4rem 6rem;
+  height: 100%;
 }
 
 /*# sourceMappingURL=my.css.map */

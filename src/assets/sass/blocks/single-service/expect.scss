@@ -1,11 +1,12 @@
 .expect {
-  margin-bottom: 200rem;
+  margin-bottom: 10rem;
   &__wrapper {
     display: flex;
     column-gap: 0rem;
     height: 46.2rem;
     @media screen and (max-width: 992px) {
         display: block;
+        height: auto;
     }
   }
   &__picture {
