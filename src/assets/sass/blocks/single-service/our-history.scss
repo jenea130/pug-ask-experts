@@ -2,12 +2,12 @@
   padding: 15.2rem 0 15.2rem;
   text-align: center;
   background: var(--text-dark);
-  //   @media screen and (max-width: 992px) {
-  //     padding: 12rem 0;
-  //   }
-  //   @media screen and (max-width: 768px) {
-  //     padding: 9rem 0;
-  //   }
+    @media screen and (max-width: 992px) {
+      padding: 12rem 0;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 9rem 0;
+    }
   .label {
     margin-bottom: 2.2rem;
     color: #fff;
@@ -15,7 +15,7 @@
   }
   &__title {
     margin: 0 auto 1.5rem;
-    max-width: 28%;
+    max-width: 52.2rem;
     color: #fff;
     // @media screen and (max-width: 768px) {
     //   max-width: 60%;
@@ -31,10 +31,14 @@
     width: 94.4rem;
     height: 37.3rem;
     margin: 0 auto;
-    // @media screen and (max-width: 576px) {
-    //   height: auto;
+    @media screen and (max-width: 768px) {
+        width: initial;
+    }
+    @media screen and (max-width: 576px) {
+      height: auto;
+      padding: 0 2rem;
     //   max-width: initial;
-    // }
+    }
   }
   &__dotted {
     position: absolute;
@@ -44,9 +48,9 @@
     // @media screen and (max-width: 992px) {
     //   right: -5rem;
     // }
-    // @media screen and (max-width: 576px) {
-    //   display: none;
-    // }
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
   }
   &__square {
     position: absolute;
@@ -60,9 +64,9 @@
     // @media screen and (max-width: 768px) {
     //   left: 4rem;
     // }
-    // @media screen and (max-width: 576px) {
-    //   display: none;
-    // }
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
   }
   &__square-y {
     position: absolute;
@@ -73,6 +77,9 @@
     background: var(--accent);
     border-radius: 2rem;
     z-index: 1;
+    @media screen and (max-width: 576px) {
+        display: none;
+    }
   }
   &__video {
     position: relative;
@@ -80,9 +87,9 @@
     left: 7%;
     width: 88%;
     z-index: 2;
-    // @media screen and (max-width: 576px) {
-    //   width: 100%;
-    //   left: 0;
-    // }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+      left: 0;
+    }
   }
 }
