@@ -1,5 +1,5 @@
 .gallery {
-  padding: 15.1rem 0;
+  padding: 18rem 0 15rem;
   @media screen and (max-width: 992px) {
     padding: 12rem 10rem;
   }
@@ -60,12 +60,13 @@
   }
   &__pictures {
     position: relative;
-    max-width: 60%;
+    height: 57.4rem;
+    width: 59%;
   }
   &__dotted {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -7.3rem;
     z-index: 1;
   }
   &__square {
@@ -80,8 +81,8 @@
   }
   &__wrap {
     position: relative;
-    top: 3rem;
-    left: 3rem;
+    top: 3.7rem;
+    left: 5.3rem;
     display: flex;
     column-gap: 2.4rem;
     width: 90%;

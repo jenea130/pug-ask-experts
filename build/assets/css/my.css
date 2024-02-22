@@ -4918,7 +4918,7 @@ input[type="submit"]:disabled {
 }
 
 .gallery {
-  padding: 15.1rem 0;
+  padding: 18rem 0 15rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -5003,13 +5003,14 @@ input[type="submit"]:disabled {
 
 .gallery__pictures {
   position: relative;
-  max-width: 60%;
+  height: 57.4rem;
+  width: 59%;
 }
 
 .gallery__dotted {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -7.3rem;
   z-index: 1;
 }
 
@@ -5026,8 +5027,8 @@ input[type="submit"]:disabled {
 
 .gallery__wrap {
   position: relative;
-  top: 3rem;
-  left: 3rem;
+  top: 3.7rem;
+  left: 5.3rem;
   display: flex;
   -moz-column-gap: 2.4rem;
   column-gap: 2.4rem;
