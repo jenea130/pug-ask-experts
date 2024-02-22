@@ -50,8 +50,8 @@
   }
   &__square {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 5%;
+    left: 4%;
     width: 10.8rem;
     height: 12.1rem;
     background: var(--contrast);
@@ -76,9 +76,9 @@
   }
   &__video {
     position: relative;
-    top: 0;
-    left: 2%;
-    width: 90%;
+    top: 3.5rem;
+    left: 7%;
+    width: 88%;
     z-index: 2;
     // @media screen and (max-width: 576px) {
     //   width: 100%;
