@@ -1265,6 +1265,10 @@ input[type="submit"]:disabled {
   overflow: hidden;
 }
 
+.video--dark {
+  height: 31.9rem;
+}
+
 @media screen and (max-width: 576px) {
   .video {
     border-radius: 2rem;
@@ -4793,6 +4797,68 @@ input[type="submit"]:disabled {
   column-gap: 6rem;
   gap: 4rem 6rem;
   height: 100%;
+}
+
+.our-history {
+  padding: 15.2rem 0 15.2rem;
+  text-align: center;
+  background: var(--text-dark);
+}
+
+.our-history .label {
+  margin-bottom: 2.2rem;
+  color: #fff;
+  background: var(--contrast);
+}
+
+.our-history__title {
+  margin: 0 auto 1.5rem;
+  max-width: 28%;
+  color: #fff;
+}
+
+.our-history__block {
+  position: relative;
+  width: 94.4rem;
+  height: 37.3rem;
+  margin: 0 auto;
+}
+
+.our-history__dotted {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.our-history__square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10.8rem;
+  height: 12.1rem;
+  background: var(--contrast);
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+.our-history__square-y {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16.4rem;
+  height: 18.3rem;
+  background: var(--accent);
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+.our-history__video {
+  position: relative;
+  top: 0;
+  left: 2%;
+  width: 90%;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=my.css.map */

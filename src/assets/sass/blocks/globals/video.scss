@@ -3,6 +3,9 @@
   height: 36.9rem;
   border-radius: 2.8rem;
   overflow: hidden;
+  &--dark {
+    height: 31.9rem;
+  }
   @media screen and (max-width: 576px) {
     border-radius: 2rem;
   }
