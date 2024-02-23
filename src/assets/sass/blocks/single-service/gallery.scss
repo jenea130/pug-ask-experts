@@ -66,7 +66,7 @@
   &__dotted {
     position: absolute;
     top: 0;
-    right: -7.3rem;
+    right: -8%;
     z-index: 1;
   }
   &__square {
@@ -85,18 +85,22 @@
     left: 5.3rem;
     display: flex;
     column-gap: 2.4rem;
-    width: 90%;
+    width: 93%;
     z-index: 2;
+  }
+  &__col1 {
+    flex: 1;
   }
   &__col2 {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+    flex: 1;
   }
   &__col1 .gallery__img {
     position: relative;
     height: 50.6rem;
-    width: 31.6rem;
+    // width: 31.6rem;
     img {
       position: absolute;
       top: 0;
@@ -110,7 +114,7 @@
   &__col2 .gallery__img {
     position: relative;
     height: 24.3rem;
-    width: 31.6rem;
+    // width: 31.6rem;
     img {
       position: absolute;
       top: 0;
