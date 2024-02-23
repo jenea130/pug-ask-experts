@@ -1,7 +1,7 @@
 import toggleMenu from "./modules/header/toggleMenu";
 import togglePrice from "./modules/togglePrice";
 import videoPlay from "./modules/video/videoPlay";
-import accordion from "./modules/accordion";
+import accordionItems from "./modules/accordion/accordionItems";
 
 window.addEventListener("DOMContentLoaded", function () {
     const plan = document.querySelector(".plan") 
@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
 
     if (accordion) {
-        accordion();
+        accordionItems();
     }
 
     toggleMenu();

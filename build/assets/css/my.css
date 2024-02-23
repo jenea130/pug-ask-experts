@@ -1208,6 +1208,10 @@ input[type="submit"]:disabled {
   object-position: 90% 0;
 }
 
+.page-intro.page-intro--team {
+  height: 48.7rem;
+}
+
 .page-intro__img {
   position: absolute;
   top: 0;
@@ -5279,6 +5283,29 @@ input[type="submit"]:disabled {
   padding-bottom: 1.7rem;
   max-width: 64rem;
   border-bottom: 1px solid #dadada;
+}
+
+.great-team {
+  padding: 14rem 0 15rem;
+}
+
+.great-team__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4.3rem;
+}
+
+.great-team__title {
+  margin-bottom: 1.3rem;
+}
+
+.great-team__text {
+  max-width: 46%;
+}
+
+.great-team__btn {
+  flex-shrink: 0;
 }
 
 /*# sourceMappingURL=my.css.map */
