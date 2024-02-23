@@ -1,4 +1,11 @@
 .accordion {
+  max-width: 60%;
+  @media screen and (max-width: 992px) {
+    max-width: 75%;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: initial;
+  }
   &__item {
     margin-bottom: 2.9rem;
   }
@@ -7,8 +14,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin-bottom: 1.6rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-right: 6rem;
     font-family: var(--font-2);
     font-weight: 500;
     font-size: 2rem;
@@ -23,7 +30,7 @@
       transform: translateY(-50%);
       width: 2rem;
       height: 2rem;
-      background: url("../i/svg/icon-plus.svg") no-repeat;
+      background: url("../i/svg/icon-plus.svg") no-repeat center;
     }
     &.active::after {
       height: 0.2rem;
@@ -36,7 +43,7 @@
     transition: max-height 0.3s ease-in-out;
   }
   &__text {
-    // margin-top: 2rem;
+    padding-right: 6rem;
     padding-bottom: 1.7rem;
     max-width: 64rem;
     border-bottom: 1px solid #dadada;
