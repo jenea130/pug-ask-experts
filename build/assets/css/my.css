@@ -1210,6 +1210,19 @@ input[type="submit"]:disabled {
 
 .page-intro.page-intro--team {
   height: 48.7rem;
+  padding-top: 14.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .page-intro.page-intro--team {
+    padding-top: 26rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page-intro.page-intro--team {
+    padding-top: 30rem;
+  }
 }
 
 .page-intro__img {
@@ -5289,11 +5302,41 @@ input[type="submit"]:disabled {
   padding: 14rem 0 15rem;
 }
 
+@media screen and (max-width: 992px) {
+  .great-team {
+    padding: 12rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .great-team {
+    padding: 10rem 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .great-team {
+    padding: 8rem 0;
+  }
+}
+
 .great-team__header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 4.3rem;
+}
+
+@media screen and (max-width: 576px) {
+  .great-team__header {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .great-team__content {
+    margin-bottom: 3rem;
+  }
 }
 
 .great-team__title {
@@ -5302,6 +5345,18 @@ input[type="submit"]:disabled {
 
 .great-team__text {
   max-width: 46%;
+}
+
+@media screen and (max-width: 992px) {
+  .great-team__text {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .great-team__text {
+    max-width: initial;
+  }
 }
 
 .great-team__btn {

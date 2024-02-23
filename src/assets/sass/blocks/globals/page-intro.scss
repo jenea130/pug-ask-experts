@@ -19,6 +19,13 @@
   }
   &.page-intro--team {
     height: 48.7rem;
+    padding-top: 14.4rem;
+    @media screen and (max-width: 768px) {
+      padding-top: 26rem;
+    }
+    @media screen and (max-width: 576px) {
+      padding-top: 30rem;
+    }
   }
   
   &__img {
