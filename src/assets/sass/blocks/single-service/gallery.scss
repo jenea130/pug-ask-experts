@@ -1,7 +1,7 @@
 .gallery {
   padding: 18rem 0 15rem;
   @media screen and (max-width: 992px) {
-    padding: 12rem 10rem;
+    padding: 12rem 4rem;
   }
   @media screen and (max-width: 768px) {
     padding: 10rem 0;
@@ -30,9 +30,15 @@
   &__text {
     margin-bottom: 3.8rem;
     max-width: 40.6rem;
+    @media screen and (max-width: 768px) {
+      max-width: initial;
+    }
   }
   &__list {
     max-width: 90%;
+    @media screen and (max-width: 576px) {
+      max-width: initial;
+    }
   }
   &__item {
     display: flex;
@@ -62,12 +68,22 @@
     position: relative;
     height: 57.4rem;
     width: 59%;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      height: auto;
+    }
   }
   &__dotted {
     position: absolute;
     top: 0;
     right: -8%;
     z-index: 1;
+    @media screen and (max-width: 1400px) {
+      right: 0;
+    }
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
   }
   &__square {
     position: absolute;
@@ -78,6 +94,12 @@
     width: 30.7rem;
     background: var(--contrast);
     z-index: 1;
+    @media screen and (max-width: 992px) {
+      bottom: -6rem;
+    }
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
   }
   &__wrap {
     position: relative;
@@ -87,6 +109,16 @@
     column-gap: 2.4rem;
     width: 93%;
     z-index: 2;
+    @media screen and (max-width: 768px) {
+      left: 2rem;
+      width: 97%;
+    }
+    @media screen and (max-width: 576px) {
+      display: block;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
   }
   &__col1 {
     flex: 1;
@@ -96,11 +128,19 @@
     flex-direction: column;
     row-gap: 2rem;
     flex: 1;
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
   }
   &__col1 .gallery__img {
     position: relative;
     height: 50.6rem;
-    // width: 31.6rem;
+    @media screen and (max-width: 992px) {
+      height: 70.6rem;
+    }
+    @media screen and (max-width: 576px) {
+      height: auto;
+    }
     img {
       position: absolute;
       top: 0;
@@ -109,12 +149,20 @@
       height: 100%;
       object-fit: cover;
       border-radius: 2.8rem;
+      @media screen and (max-width: 576px) {
+        position: static;
+      }
     }
   }
   &__col2 .gallery__img {
     position: relative;
     height: 24.3rem;
-    // width: 31.6rem;
+    @media screen and (max-width: 992px) {
+      height: 34.3rem;
+    }
+    @media screen and (max-width: 576px) {
+      height: auto;
+    }
     img {
       position: absolute;
       top: 0;
@@ -123,6 +171,9 @@
       height: 100%;
       object-fit: cover;
       border-radius: 2.8rem;
+      @media screen and (max-width: 576px) {
+        position: static;
+      }
     }
   }
 }
