@@ -1,13 +1,14 @@
 .accordion {
   &__item {
-    margin-bottom: 2.1rem;
+    margin-bottom: 2.9rem;
   }
   &__subtitle {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.6rem;
+    // margin-bottom: 1.6rem;
+    margin-bottom: 1.8rem;
     font-family: var(--font-2);
     font-weight: 500;
     font-size: 2rem;
@@ -17,7 +18,7 @@
     &::after {
       content: "";
       position: absolute;
-      right: 1rem;
+      right: 0.3rem;
       top: 50%;
       transform: translateY(-50%);
       width: 2rem;
@@ -35,7 +36,7 @@
     transition: max-height 0.3s ease-in-out;
   }
   &__text {
-    margin-top: 2rem;
+    // margin-top: 2rem;
     padding-bottom: 1.7rem;
     max-width: 64rem;
     border-bottom: 1px solid #dadada;
