@@ -7,6 +7,7 @@ block title
 	title Main page
 
 block content
+	include ../includes/mixins
 	include ../blocks/globals/top-header
 	include ../blocks/globals/main-header
 	include ../blocks/home/home-intro
@@ -21,9 +22,11 @@ block content
 	//- include ../blocks/home/reviews
 	include ../blocks/home/team
 	include ../blocks/home/brands
-	//- include ../blocks/home/plan
-	//- .container
-	//- 	include ../blocks/home/contact
+	include ../blocks/home/plan
+	.container
+		.wrapper
+			+contact('')
+		//- include ../blocks/home/contact
 	include ../blocks/globals/main-footer
 
 block scripts

@@ -59,6 +59,7 @@
   &__img {
     position: relative;
     padding-bottom: 108%;
+    display: inline-block;
     cursor: pointer;
     &:hover .our-team__spec {
       color: var(--text-dark);

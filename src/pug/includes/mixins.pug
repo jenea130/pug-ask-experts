@@ -9,3 +9,17 @@ mixin pageIntro(label, title, img, class_name = '')
       .page-intro__content
         .label= label
         h1.page-intro__title= title
+
+mixin contact(class_name = '')
+  .contact(class=class_name) 
+      .contact__img 
+          img(src="assets/i/contact/contact-img.jpg", alt="")
+      .contact__content
+          .contact__wrap
+              .contact__label.label Contact
+              h2.contact__title.title Ready To Talk?
+              .contact__text.text Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Massa placerat duis ultricies lacus sed turpis. Pellentesque  pellentesque habitant morbi tristique.
+          .contact__form.form-small 
+              .form-small__group    
+                  input(type="text" placeholder="your mail address")
+                  button(type="button").btn.btn--contrast Send Message 

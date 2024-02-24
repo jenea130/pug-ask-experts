@@ -32,6 +32,9 @@
     flex-direction: column;
     margin-top: 0;
   }
+  &.contact--team {
+    margin-top: 0;
+  }
   &__img {
     position: relative;
     padding-bottom: 34%;
