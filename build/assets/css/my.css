@@ -1231,6 +1231,24 @@ input[type="submit"]:disabled {
   padding-top: 14.4rem;
 }
 
+@media screen and (max-width: 576px) {
+  .page-intro.page-intro--case-studies {
+    padding-top: 30rem;
+  }
+}
+
+.page-intro.page-intro--case-studies .page-intro__img {
+  -o-object-position: right;
+  object-position: right;
+}
+
+@media screen and (max-width: 768px) {
+  .page-intro.page-intro--case-studies .page-intro__img {
+    -o-object-position: 80% bottom;
+    object-position: 80% bottom;
+  }
+}
+
 .page-intro__img {
   position: absolute;
   top: 0;
