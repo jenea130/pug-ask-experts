@@ -1,7 +1,7 @@
 .member {
   padding: 15.9rem 0 15rem;
   @media screen and (max-width: 576px) {
-    padding: 10rem 0;
+    padding: 10rem 0 8rem;
   }
   &__wrapper {
     display: flex;
@@ -49,6 +49,7 @@
     @media screen and (max-width: 576px) {
         display: none;
     }
+
   }
   &__img {
     position: relative;

@@ -5375,7 +5375,7 @@ input[type="submit"]:disabled {
 
 @media screen and (max-width: 576px) {
   .member {
-    padding: 10rem 0;
+    padding: 10rem 0 8rem;
   }
 }
 
@@ -5587,6 +5587,13 @@ input[type="submit"]:disabled {
   overflow: hidden;
 }
 
+@media screen and (max-width: 576px) {
+  .subscribe {
+    padding: 7rem 3rem;
+    margin-bottom: 10rem;
+  }
+}
+
 .subscribe__dotted {
   position: absolute;
   top: 0;
@@ -5606,18 +5613,43 @@ input[type="submit"]:disabled {
   z-index: 2;
 }
 
+@media screen and (max-width: 992px) {
+  .subscribe__square {
+    top: 28rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .subscribe__square {
+    top: 32rem;
+    right: -14rem;
+  }
+}
+
 .subscribe__wrapper {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  -moz-column-gap: 2rem;
-  column-gap: 2rem;
+  -moz-column-gap: 3rem;
+  column-gap: 3rem;
   z-index: 3;
+}
+
+@media screen and (max-width: 992px) {
+  .subscribe__wrapper {
+    display: block;
+  }
 }
 
 .subscribe__content {
   flex: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .subscribe__content {
+    margin-bottom: 4rem;
+  }
 }
 
 .subscribe__subtitle {
@@ -5639,6 +5671,12 @@ input[type="submit"]:disabled {
 
 .subscribe__form input {
   min-width: 31.1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .subscribe__form input {
+    min-width: initial;
+  }
 }
 
 .subscribe__form button {

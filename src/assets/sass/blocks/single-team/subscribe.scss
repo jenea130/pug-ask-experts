@@ -5,6 +5,10 @@
   background: var(--text-dark);
   border-radius: 2rem;
   overflow: hidden;
+  @media screen and (max-width: 576px) {
+    padding: 7rem 3rem;
+    margin-bottom: 10rem;
+  }
   &__dotted {
     position: absolute;
     top: 0;
@@ -21,17 +25,30 @@
     border-radius: 2rem;
     transform: rotate(-135deg);
     z-index: 2;
+    @media screen and (max-width: 992px) {
+      top: 28rem;
+    }
+    @media screen and (max-width: 576px) {
+        top: 32rem;
+        right: -14rem;
+    }
   }
   &__wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 2rem;
+    column-gap: 3rem;
     z-index: 3;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
   }
   &__content {
     flex: 1;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 4rem;
+    }
   }
   &__subtitle {
     margin-bottom: 1.2rem;
@@ -48,6 +65,9 @@
     flex: 1;
     input {
       min-width: 31.1rem;
+      @media screen and (max-width: 576px) {
+        min-width: initial;
+      }
     }
     button {
       padding: 1.5rem 4.5rem;
