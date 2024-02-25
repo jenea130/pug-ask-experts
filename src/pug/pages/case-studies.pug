@@ -1,0 +1,37 @@
+extends template
+
+block css
+	link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+	title Case Studies
+
+block content
+	include ../includes/mixins
+	include ../blocks/globals/top-header
+	include ../blocks/globals/main-header
+	+pageIntro("Case Studies", "Case Studies", "assets/i/page-intro/case-studies-intro.jpg", "page-intro--case-studies")
+	//- .container 
+	//- 	include ../blocks/home/features
+	//- 	include ../blocks/home/about-me
+	//- include ../blocks/home/services
+	//- include ../blocks/home/experience
+	//- include ../blocks/home/work
+	//- include ../blocks/home/education
+	//- include ../blocks/home/counter
+	//- include ../blocks/home/reviews
+	include ../blocks/home/team
+	include ../blocks/home/brands
+	include ../blocks/home/plan
+	.container
+		.wrapper
+			+contact('')
+		//- include ../blocks/home/contact
+	include ../blocks/globals/main-footer
+
+block scripts
+	script(src="assets/libs/jquery-3.7.1.min.js")
+	script(src="assets/libs/slick.min.js")
+	script(src="assets/libs/roundslider.min.js")
+	script(src="assets/js/dist/webpack.js")
+	script(src="assets/jquery/custom-jquery.js")

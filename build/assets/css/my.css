@@ -1226,6 +1226,11 @@ input[type="submit"]:disabled {
   }
 }
 
+.page-intro.page-intro--case-studies {
+  height: 48.7rem;
+  padding-top: 14.4rem;
+}
+
 .page-intro__img {
   position: absolute;
   top: 0;
