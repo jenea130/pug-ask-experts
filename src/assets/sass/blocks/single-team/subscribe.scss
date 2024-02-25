@@ -1,0 +1,56 @@
+.subscribe {
+  margin-bottom: 15rem;
+  position: relative;
+  padding: 8.7rem;
+  background: var(--text-dark);
+  border-radius: 2rem;
+  overflow: hidden;
+  &__dotted {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  &__square {
+    position: absolute;
+    top: 20rem;
+    right: -13rem;
+    height: 22.6rem;
+    width: 28.4rem;
+    background: var(--contrast);
+    border-radius: 2rem;
+    transform: rotate(-135deg);
+    z-index: 2;
+  }
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+    z-index: 3;
+  }
+  &__content {
+    flex: 1;
+  }
+  &__subtitle {
+    margin-bottom: 1.2rem;
+    font-family: var(--font-2);
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.16;
+    color: #fff;
+  }
+  &__text {
+    color: #fff;
+  }
+  &__form {
+    flex: 1;
+    input {
+      min-width: 31.1rem;
+    }
+    button {
+      padding: 1.5rem 4.5rem;
+    }
+  }
+}

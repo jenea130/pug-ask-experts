@@ -1130,6 +1130,7 @@ input[type="submit"]:disabled {
   font-family: var(--font-1);
   font-weight: 400;
   font-size: 1.6rem;
+  text-indent: 1.3rem;
   color: var(--text-dark);
   width: 100%;
   max-width: 30rem;
@@ -5575,6 +5576,73 @@ input[type="submit"]:disabled {
 
 .member__text p:not(:last-child) {
   margin-bottom: 2.8rem;
+}
+
+.subscribe {
+  margin-bottom: 15rem;
+  position: relative;
+  padding: 8.7rem;
+  background: var(--text-dark);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.subscribe__dotted {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.subscribe__square {
+  position: absolute;
+  top: 20rem;
+  right: -13rem;
+  height: 22.6rem;
+  width: 28.4rem;
+  background: var(--contrast);
+  border-radius: 2rem;
+  transform: rotate(-135deg);
+  z-index: 2;
+}
+
+.subscribe__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+  z-index: 3;
+}
+
+.subscribe__content {
+  flex: 1;
+}
+
+.subscribe__subtitle {
+  margin-bottom: 1.2rem;
+  font-family: var(--font-2);
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.16;
+  color: #fff;
+}
+
+.subscribe__text {
+  color: #fff;
+}
+
+.subscribe__form {
+  flex: 1;
+}
+
+.subscribe__form input {
+  min-width: 31.1rem;
+}
+
+.subscribe__form button {
+  padding: 1.5rem 4.5rem;
 }
 
 /*# sourceMappingURL=my.css.map */
