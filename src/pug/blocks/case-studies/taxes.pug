@@ -1,20 +1,56 @@
 .taxes 
     ul.taxes__header
-        li.taxes__item All
-        li.taxes__item Taxes & Efficiency
-        li.taxes__item Investment banking
-        li.taxes__item Financial Plan
-        li.taxes__item Audit & Evaluation
+        li.taxes__item(data-target="all") All
+        li.taxes__item(data-target="one") Taxes & Efficiency
+        li.taxes__item(data-target="two") Investment banking
+        li.taxes__item(data-target="three") Financial Plan
+        li.taxes__item(data-target="four") Audit & Evaluation
     .taxes__wrapper 
-        .taxes__img 
+        a(href="/single-case-studies.html").taxes__img.one.three
             img(src="assets/i/taxes/taxes-1.jpg", alt="")
-        .taxes__img 
+            .taxes__wrap
+                .taxes__icon
+                    include ../icons/icon-plus
+                .taxes__info
+                    h3.taxes__subtitle.subtitle Taxes & Efficiency
+                    .taxes__text Business
+        a(href="/single-case-studies.html").taxes__img.two.four 
             img(src="assets/i/taxes/taxes-2.jpg", alt="")
-        .taxes__img 
+            .taxes__wrap
+                .taxes__icon
+                    include ../icons/icon-plus
+                .taxes__info
+                    h3.taxes__subtitle.subtitle Taxes & Efficiency
+                    .taxes__text Business
+        a(href="/single-case-studies.html").taxes__img.three.one 
             img(src="assets/i/taxes/taxes-3.jpg", alt="")
-        .taxes__img 
+            .taxes__wrap
+                .taxes__icon
+                    include ../icons/icon-plus
+                .taxes__info
+                    h3.taxes__subtitle.subtitle Taxes & Efficiency
+                    .taxes__text Business
+        a(href="/single-case-studies.html").taxes__img.one.three 
             img(src="assets/i/taxes/taxes-4.jpg", alt="")
-        .taxes__img 
+            .taxes__wrap
+                .taxes__icon
+                    include ../icons/icon-plus
+                .taxes__info
+                    h3.taxes__subtitle.subtitle Taxes & Efficiency
+                    .taxes__text Business
+        a(href="/single-case-studies.html").taxes__img.four.one
             img(src="assets/i/taxes/taxes-5.jpg", alt="")
-        .taxes__img 
+            .taxes__wrap
+                .taxes__icon
+                    include ../icons/icon-plus
+                .taxes__info
+                    h3.taxes__subtitle.subtitle Taxes & Efficiency
+                    .taxes__text Business
+        a(href="/single-case-studies.html").taxes__img.two.thre 
             img(src="assets/i/taxes/taxes-6.jpg", alt="")
+            .taxes__wrap
+                .taxes__icon
+                    include ../icons/icon-plus
+                .taxes__info
+                    h3.taxes__subtitle.subtitle Taxes & Efficiency
+                    .taxes__text Business

@@ -40,6 +40,16 @@
       }
     }
   }
+  &.page-intro--single-case {
+    height: 48.7rem;
+    padding-top: 14.4rem;
+    @media screen and (max-width: 576px) {
+      padding-top: 30rem;
+    }
+    .page-intro__img {
+      object-position: center;
+    }
+  }
   
   &__img {
     position: absolute;
