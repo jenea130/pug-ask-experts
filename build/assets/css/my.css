@@ -5962,10 +5962,51 @@ input[type="submit"]:disabled {
   z-index: 2;
 }
 
+@media screen and (max-width: 768px) {
+  .preview__wrapper {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .preview__wrapper {
+    padding: 3rem 3rem;
+  }
+}
+
 .preview__content {
   display: flex;
   justify-content: space-between;
   width: 51%;
+}
+
+@media screen and (max-width: 1200px) {
+  .preview__content {
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .preview__content {
+    width: 64%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .preview__content {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .preview__content {
+    display: block;
+  }
+}
+
+.preview__col {
+  margin-bottom: 2rem;
 }
 
 .preview__subtitle {
