@@ -106,7 +106,7 @@ body::after {
   height: 100vh;
   background: green;
   z-index: 100;
-  display: block;
+  display: none;
 }
 
 *,
@@ -3221,6 +3221,7 @@ input[type="submit"]:disabled {
 
 .contact.contact--team {
   margin-top: 0;
+  margin-bottom: 15rem;
 }
 
 .contact__img {
@@ -5630,10 +5631,22 @@ input[type="submit"]:disabled {
   overflow: hidden;
 }
 
+@media screen and (max-width: 992px) {
+  .subscribe {
+    margin-bottom: 12rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe {
+    margin-bottom: 10rem;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .subscribe {
     padding: 7rem 3rem;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -5995,6 +6008,7 @@ input[type="submit"]:disabled {
 .preview__content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 51%;
 }
 
@@ -6023,8 +6037,10 @@ input[type="submit"]:disabled {
   }
 }
 
-.preview__col {
-  margin-bottom: 2rem;
+@media screen and (max-width: 576px) {
+  .preview__col {
+    margin-bottom: 2rem;
+  }
 }
 
 .preview__subtitle {
@@ -6129,6 +6145,24 @@ input[type="submit"]:disabled {
   text-align: center;
 }
 
+@media screen and (max-width: 992px) {
+  .case-gallery {
+    margin-bottom: 12rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .case-gallery {
+    margin-bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .case-gallery {
+    margin-bottom: 8rem;
+  }
+}
+
 .case-gallery__title {
   margin-bottom: 4.1rem;
   text-align: center;
@@ -6136,9 +6170,24 @@ input[type="submit"]:disabled {
 
 .case-gallery__wrapper {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 2.4rem;
   margin: 0 -1.2rem 5rem;
   padding: 4.1rem 2.5rem;
   background: #d9d9d9;
+}
+
+@media screen and (max-width: 768px) {
+  .case-gallery__wrapper {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .case-gallery__wrapper {
+    padding: 3rem 1rem;
+  }
 }
 
 .case-gallery__img {
@@ -6148,7 +6197,19 @@ input[type="submit"]:disabled {
   height: 34.4rem;
 }
 
-.case-gallery__img img {
+@media screen and (max-width: 992px) {
+  .case-gallery__img {
+    flex: 0 0 calc(100% / 2 - 2.4rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .case-gallery__img {
+    height: auto;
+  }
+}
+
+.case-gallery img {
   position: absolute;
   top: 0;
   left: 0;
@@ -6157,6 +6218,18 @@ input[type="submit"]:disabled {
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .case-gallery img {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .case-gallery__img:not(:last-of-type) {
+    margin-bottom: 2.4rem;
+  }
 }
 
 /*# sourceMappingURL=my.css.map */

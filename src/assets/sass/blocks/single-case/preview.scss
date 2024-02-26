@@ -36,32 +36,35 @@
     background: var(--text-dark);
     z-index: 2;
     @media screen and (max-width: 768px) {
-        display: block;
+      display: block;
     }
     @media screen and (max-width: 576px) {
-        padding: 3rem 3rem;
+      padding: 3rem 3rem;
     }
   }
   &__content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 51%;
     @media screen and (max-width: 1200px) {
-        width: 58%;
+      width: 58%;
     }
     @media screen and (max-width: 992px) {
-        width: 64%;
+      width: 64%;
     }
     @media screen and (max-width: 768px) {
-        margin-bottom: 3rem;
-        width: 100%;
+      margin-bottom: 3rem;
+      width: 100%;
     }
     @media screen and (max-width: 576px) {
-        display: block;
+      display: block;
     }
   }
   &__col {
-    margin-bottom: 2rem;
+    @media screen and (max-width: 576px) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__subtitle {
