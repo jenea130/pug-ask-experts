@@ -1,6 +1,15 @@
 .overview {
-    margin: 0 auto;
+    margin: 0 auto 15rem;
     max-width: 79.2rem;
+    @media screen and (max-width: 992px) {
+        margin-bottom: 12rem;
+    }
+    @media screen and (max-width: 768px) {
+        margin-bottom: 10rem;
+    }
+    @media screen and (max-width: 576px) {
+        margin-bottom: 8rem;
+    }
   &__title {
     margin-bottom: 1.5rem;
   }
