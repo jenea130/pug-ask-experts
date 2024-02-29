@@ -6264,17 +6264,18 @@ input[type="submit"]:disabled {
 
 .articles {
   margin-top: 17rem;
+  margin-bottom: 15rem;
 }
 
 @media screen and (max-width: 992px) {
   .articles {
-    margin-top: 12rem;
+    margin: 12rem 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .articles {
-    margin-top: 10rem;
+    margin: 10rem 0;
   }
 }
 
