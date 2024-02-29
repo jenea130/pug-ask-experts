@@ -36,7 +36,7 @@
     .page-intro__img {
       object-position: right;
       @media screen and (max-width: 768px) {
-        object-position: 80% bottom ;
+        object-position: 80% bottom;
       }
     }
   }
@@ -63,7 +63,25 @@
       object-position: center;
     }
   }
-  
+  &.page-intro--single-blog {
+    height: 74.4rem;
+    padding-top: 23rem;
+    @media screen and (max-width: 992px) {
+      padding-top: 28rem;
+    }
+    @media screen and (max-width: 768px) {
+      padding-top: 32rem;
+    }
+    .page-intro__content {
+      max-width: 83rem;
+    }
+    .page-intro__img {
+      @media screen and (max-width: 576px) {
+        object-position: -90rem center;
+      }
+    }
+  }
+
   &__img {
     position: absolute;
     top: 0;
