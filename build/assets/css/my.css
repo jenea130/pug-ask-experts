@@ -951,6 +951,13 @@ input[type="submit"]:disabled {
   background: var(--contrast);
 }
 
+.btn__one {
+  outline: 1px solid #151515;
+  border: 1px solid #151515;
+  background: #000;
+  color: red;
+}
+
 .btn-icon {
   display: inline-flex;
   justify-content: space-between;
@@ -6253,6 +6260,115 @@ input[type="submit"]:disabled {
   .case-gallery__img:not(:last-of-type) {
     margin-bottom: 2.4rem;
   }
+}
+
+.articles {
+  margin-top: 17rem;
+}
+
+.articles__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6.9rem;
+}
+
+.articles .label {
+  margin-bottom: 0.6rem;
+  color: #fff;
+  background: var(--contrast);
+}
+
+.articles__title {
+  max-width: 60%;
+}
+
+.articles__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 6rem;
+  margin: 0 -1.7rem;
+}
+
+.articles__item {
+  flex: 0 0 calc(50% - 3.4rem);
+  margin: 0 1.7rem;
+}
+
+.articles__img {
+  position: relative;
+  margin-bottom: 2.8rem;
+  height: 32rem;
+}
+
+.articles__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.articles__subtitle {
+  margin-bottom: 1.2rem;
+  font-family: var(--font-2);
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.16;
+  color: var(--text-dark);
+}
+
+.articles__text {
+  margin-bottom: 1rem;
+}
+
+.articles__footer {
+  display: flex;
+  align-items: center;
+  padding: 1.4rem 0;
+  border-top: 1px solid #c1c1c1;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.articles__ava {
+  position: relative;
+  height: 6rem;
+  width: 6rem;
+}
+
+.articles__ava img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.articles__name {
+  margin-left: 0.8rem;
+  padding-right: 2.2rem;
+  display: inline-flex;
+  line-height: 1;
+  border-right: 1px solid #595566;
+}
+
+.articles__date {
+  display: inline-block;
+  padding-left: 2.2rem;
+  line-height: 1;
+}
+
+.articles__link {
+  margin-left: auto;
+  padding: 1.6rem 4rem;
+  outline: 1px solid #c1c1c1;
 }
 
 /*# sourceMappingURL=my.css.map */
