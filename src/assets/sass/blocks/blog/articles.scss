@@ -1,12 +1,22 @@
 .articles {
   margin-top: 17rem;
+  @media screen and (max-width: 992px) {
+    margin-top: 12rem;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 10rem;
+  }
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 6.9rem;
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
   }
   &__content {
+    flex: 1;
   }
   .label {
     margin-bottom: 0.6rem;
@@ -15,6 +25,13 @@
   }
   &__title {
     max-width: 60%;
+    @media screen and (max-width: 768px) {
+      max-width: 80%;
+    }
+    @media screen and (max-width: 576px) {
+      max-width: 100%;
+      margin-bottom: 3rem;
+    }
   }
   &__wrapper {
     display: flex;
@@ -22,10 +39,16 @@
     justify-content: space-between;
     row-gap: 6rem;
     margin: 0 -1.7rem;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
   }
   &__item {
     flex: 0 0 calc(50% - 3.4rem);
     margin: 0 1.7rem;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 5rem;
+    }
   }
   &__img {
     position: relative;
@@ -58,6 +81,17 @@
     padding: 1.4rem 0;
     border-top: 1px solid #c1c1c1;
     border-bottom: 1px solid #c1c1c1;
+    @media screen and (max-width: 576px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 576px) {
+      margin-bottom: 2rem;
+      flex: 0 0 100%;
+    }
   }
   &__ava {
     position: relative;
