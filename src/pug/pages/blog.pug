@@ -4,18 +4,15 @@ block css
 	link(rel="stylesheet" type="text/css" href="assets/css/my.css")
 
 block title
-	title Services
+	title Blog
 
 block content
 	include ../includes/mixins
 	include ../blocks/globals/top-header
 	include ../blocks/globals/main-header
-	+pageIntro("Services", "Creative Services For Boost Your Business Growth", "assets/i/page-intro/services-intro.jpg", "page-intro--services")
-	include ../blocks/services/control
+	+pageIntro("Blog", "Latest Blogs & News", "assets/i/page-intro/blog-intro.jpg", "page-intro--blog")
 	.container 
-		include ../blocks/services/process
-	include ../blocks/services/pricing
-	.container
+		include ../blocks/case-studies/taxes
 		include ../blocks/services/contact-us
 	include ../blocks/globals/main-footer
 

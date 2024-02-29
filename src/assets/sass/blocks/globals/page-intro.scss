@@ -50,6 +50,19 @@
       object-position: center;
     }
   }
+  &.page-intro--blog {
+    height: 48.7rem;
+    padding-top: 14.4rem;
+    @media screen and (max-width: 768px) {
+      padding-top: 20rem;
+    }
+    @media screen and (max-width: 576px) {
+      padding-top: 30rem;
+    }
+    .page-intro__img {
+      object-position: center;
+    }
+  }
   
   &__img {
     position: absolute;

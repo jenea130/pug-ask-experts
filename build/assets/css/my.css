@@ -1269,6 +1269,28 @@ input[type="submit"]:disabled {
   object-position: center;
 }
 
+.page-intro.page-intro--blog {
+  height: 48.7rem;
+  padding-top: 14.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .page-intro.page-intro--blog {
+    padding-top: 20rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page-intro.page-intro--blog {
+    padding-top: 30rem;
+  }
+}
+
+.page-intro.page-intro--blog .page-intro__img {
+  -o-object-position: center;
+  object-position: center;
+}
+
 .page-intro__img {
   position: absolute;
   top: 0;
@@ -5831,7 +5853,7 @@ input[type="submit"]:disabled {
   position: relative;
   flex: 0 0 calc(100% / 3 - 2.4rem);
   margin: 0 1.2rem;
-  padding-bottom: 28%;
+  height: 34.4rem;
   cursor: pointer;
 }
 
@@ -5902,14 +5924,18 @@ input[type="submit"]:disabled {
 }
 
 .taxes__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2.2rem;
   opacity: 0;
   transition: opacity 0.3s ease;
+  z-index: 3;
 }
 
 .taxes__icon {
-  position: absolute;
-  top: 2.2rem;
-  right: 3rem;
+  align-self: flex-end;
   width: 5.4rem;
   height: 5.4rem;
   border-radius: 50%;
@@ -5925,10 +5951,7 @@ input[type="submit"]:disabled {
 }
 
 .taxes__info {
-  position: absolute;
-  padding-right: 5rem;
-  left: 2.5rem;
-  bottom: 2.4rem;
+  margin-top: auto;
   z-index: 3;
 }
 
