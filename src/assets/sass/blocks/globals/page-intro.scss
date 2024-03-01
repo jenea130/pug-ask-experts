@@ -81,6 +81,12 @@
       }
     }
   }
+  &.page-intro--contact {
+    height: 53.6rem;
+    @media screen and (max-width: 768px) {
+      padding-top: 30rem;
+    }
+  }
 
   &__img {
     position: absolute;

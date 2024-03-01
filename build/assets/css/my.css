@@ -1319,6 +1319,16 @@ input[type="submit"]:disabled {
   }
 }
 
+.page-intro.page-intro--contact {
+  height: 53.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .page-intro.page-intro--contact {
+    padding-top: 30rem;
+  }
+}
+
 .page-intro__img {
   position: absolute;
   top: 0;
