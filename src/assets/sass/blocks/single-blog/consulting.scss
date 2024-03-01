@@ -1,5 +1,9 @@
 .consulting {
   margin-top: 4.3rem;
+  margin-bottom: 16.6rem;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 10rem;
+  }
   &__block {
     max-width: 79%;
   }
@@ -104,6 +108,7 @@
     z-index: 3;
   }
   &__list-1 {
+    margin-bottom: 3.6rem;
     padding-left: 1.2rem;
   }
   &__item-1 {
@@ -120,33 +125,50 @@
   &__author {
     position: relative;
     padding: 5.9rem 5.5rem 6.8rem;
-    // width: 79.4rem;
-    width: 66%;
+    width: 80rem;
     background: var(--text-dark);
     border-radius: 3rem;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 5.9rem 3.5rem 4.8rem;
+    }
   }
   &__dotted-2 {
     position: absolute;
     top: 0;
     left: 42rem;
     z-index: 1;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
   &__decor {
     position: absolute;
     top: 4.6rem;
-    left: 2.0rem;
+    left: 2rem;
     z-index: 1;
+    @media screen and (max-width: 768px) {
+      top: 1.6rem;
+    }
   }
   &__flex {
     display: flex;
     justify-content: space-between;
     column-gap: 3.5rem;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
   }
   &__ava {
     flex: 0 0 29%;
     position: relative;
     // width: 19.2rem;
     height: 19.2rem;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 3rem;
+    }
     img {
       position: absolute;
       top: 0;
@@ -155,7 +177,12 @@
       height: 19.2rem;
       object-fit: cover;
       border-radius: 50%;
+      z-index: 2;
     }
+  }
+  &__content {
+    position: relative;
+    z-index: 2;
   }
   &__name {
     margin-bottom: 0.5rem;

@@ -6460,6 +6460,13 @@ input[type="submit"]:disabled {
 
 .consulting {
   margin-top: 4.3rem;
+  margin-bottom: 16.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .consulting {
+    margin-bottom: 10rem;
+  }
 }
 
 .consulting__block {
@@ -6584,6 +6591,7 @@ input[type="submit"]:disabled {
 }
 
 .consulting__list-1 {
+  margin-bottom: 3.6rem;
   padding-left: 1.2rem;
 }
 
@@ -6603,9 +6611,21 @@ input[type="submit"]:disabled {
 .consulting__author {
   position: relative;
   padding: 5.9rem 5.5rem 6.8rem;
-  width: 66%;
+  width: 80rem;
   background: var(--text-dark);
   border-radius: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .consulting__author {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .consulting__author {
+    padding: 5.9rem 3.5rem 4.8rem;
+  }
 }
 
 .consulting__dotted-2 {
@@ -6615,11 +6635,23 @@ input[type="submit"]:disabled {
   z-index: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .consulting__dotted-2 {
+    display: none;
+  }
+}
+
 .consulting__decor {
   position: absolute;
   top: 4.6rem;
-  left: 2.0rem;
+  left: 2rem;
   z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .consulting__decor {
+    top: 1.6rem;
+  }
 }
 
 .consulting__flex {
@@ -6629,10 +6661,22 @@ input[type="submit"]:disabled {
   column-gap: 3.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .consulting__flex {
+    display: block;
+  }
+}
+
 .consulting__ava {
   flex: 0 0 29%;
   position: relative;
   height: 19.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .consulting__ava {
+    margin-bottom: 3rem;
+  }
 }
 
 .consulting__ava img {
@@ -6644,6 +6688,12 @@ input[type="submit"]:disabled {
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
+  z-index: 2;
+}
+
+.consulting__content {
+  position: relative;
+  z-index: 2;
 }
 
 .consulting__name {
