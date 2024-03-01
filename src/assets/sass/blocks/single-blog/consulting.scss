@@ -21,6 +21,9 @@
     position: relative;
     margin-bottom: 4.3rem;
     height: 54.5rem;
+    @media screen and (max-width: 576px) {
+      height: 30rem;
+    }
     img {
       position: absolute;
       top: 0;
@@ -34,7 +37,7 @@
   &__list {
     margin-bottom: 3.6rem;
   }
-  li {
+  &__item {
     position: relative;
     padding-left: 2rem;
     margin-bottom: 1.6rem;
@@ -61,6 +64,7 @@
   }
   &__cite {
     position: relative;
+    margin-bottom: 3.6rem;
     padding: 9.4rem 0 8.6rem;
     background: var(--text-dark);
     border-radius: 3rem;
@@ -88,6 +92,7 @@
     text-align: center;
   }
   &__subtext {
+    position: relative;
     max-width: 74%;
     margin: 0 auto;
     font-family: var(--font-2);
@@ -96,5 +101,86 @@
     line-height: 1.4;
     text-align: center;
     color: #fff;
+    z-index: 3;
+  }
+  &__list-1 {
+    padding-left: 1.2rem;
+  }
+  &__item-1 {
+    margin-bottom: 1.6rem;
+    font-family: var(--font-2);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.16;
+    color: #595566;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__author {
+    position: relative;
+    padding: 5.9rem 5.5rem 6.8rem;
+    // width: 79.4rem;
+    width: 66%;
+    background: var(--text-dark);
+    border-radius: 3rem;
+  }
+  &__dotted-2 {
+    position: absolute;
+    top: 0;
+    left: 42rem;
+    z-index: 1;
+  }
+  &__decor {
+    position: absolute;
+    top: 4.6rem;
+    left: 2.0rem;
+    z-index: 1;
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 3.5rem;
+  }
+  &__ava {
+    flex: 0 0 29%;
+    position: relative;
+    // width: 19.2rem;
+    height: 19.2rem;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 19.2rem;
+      height: 19.2rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  &__name {
+    margin-bottom: 0.5rem;
+    font-family: var(--font-2);
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.16;
+    color: #fff;
+  }
+  &__job {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.475;
+    color: #fff;
+  }
+  &__desc {
+    margin-bottom: 1.9rem;
+    color: #fff;
+  }
+  &__social {
+    display: flex;
+    column-gap: 2.3rem;
+    svg {
+      display: inline-block;
+    }
   }
 }

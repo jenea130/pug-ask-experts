@@ -6489,6 +6489,12 @@ input[type="submit"]:disabled {
   height: 54.5rem;
 }
 
+@media screen and (max-width: 576px) {
+  .consulting__img {
+    height: 30rem;
+  }
+}
+
 .consulting__img img {
   position: absolute;
   top: 0;
@@ -6504,7 +6510,7 @@ input[type="submit"]:disabled {
   margin-bottom: 3.6rem;
 }
 
-.consulting li {
+.consulting__item {
   position: relative;
   padding-left: 2rem;
   margin-bottom: 1.6rem;
@@ -6515,7 +6521,7 @@ input[type="submit"]:disabled {
   color: #595566;
 }
 
-.consulting li::before {
+.consulting__item::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -6527,12 +6533,13 @@ input[type="submit"]:disabled {
   border-radius: 50%;
 }
 
-.consulting li:last-child {
+.consulting__item:last-child {
   margin-bottom: 0;
 }
 
 .consulting__cite {
   position: relative;
+  margin-bottom: 3.6rem;
   padding: 9.4rem 0 8.6rem;
   background: var(--text-dark);
   border-radius: 3rem;
@@ -6564,6 +6571,7 @@ input[type="submit"]:disabled {
 }
 
 .consulting__subtext {
+  position: relative;
   max-width: 74%;
   margin: 0 auto;
   font-family: var(--font-2);
@@ -6572,6 +6580,102 @@ input[type="submit"]:disabled {
   line-height: 1.4;
   text-align: center;
   color: #fff;
+  z-index: 3;
+}
+
+.consulting__list-1 {
+  padding-left: 1.2rem;
+}
+
+.consulting__item-1 {
+  margin-bottom: 1.6rem;
+  font-family: var(--font-2);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.16;
+  color: #595566;
+}
+
+.consulting__item-1:last-child {
+  margin-bottom: 0;
+}
+
+.consulting__author {
+  position: relative;
+  padding: 5.9rem 5.5rem 6.8rem;
+  width: 66%;
+  background: var(--text-dark);
+  border-radius: 3rem;
+}
+
+.consulting__dotted-2 {
+  position: absolute;
+  top: 0;
+  left: 42rem;
+  z-index: 1;
+}
+
+.consulting__decor {
+  position: absolute;
+  top: 4.6rem;
+  left: 2.0rem;
+  z-index: 1;
+}
+
+.consulting__flex {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 3.5rem;
+  column-gap: 3.5rem;
+}
+
+.consulting__ava {
+  flex: 0 0 29%;
+  position: relative;
+  height: 19.2rem;
+}
+
+.consulting__ava img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 19.2rem;
+  height: 19.2rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.consulting__name {
+  margin-bottom: 0.5rem;
+  font-family: var(--font-2);
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 1.16;
+  color: #fff;
+}
+
+.consulting__job {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.475;
+  color: #fff;
+}
+
+.consulting__desc {
+  margin-bottom: 1.9rem;
+  color: #fff;
+}
+
+.consulting__social {
+  display: flex;
+  -moz-column-gap: 2.3rem;
+  column-gap: 2.3rem;
+}
+
+.consulting__social svg {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=my.css.map */
