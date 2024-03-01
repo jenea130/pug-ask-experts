@@ -4,11 +4,11 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    // column-gap: 8.2rem;
+    column-gap: 8.2rem;
   }
   &__picture {
     position: relative;
-    flex: 0 0 60%;
+    flex: 0 0 53%;
   }
   &__dotted {
     position: absolute;
@@ -28,12 +28,13 @@
   }
   &__img {
     position: relative;
-    height: 50.4rem;
+    // height: 50.4rem;
+    padding-bottom: 76%;
     img {
       position: absolute;
       top: 0;
       left: 0;
-      // width: 100%;
+      width: 100%;
       // height: 100%;
       object-fit: cover;
       border-radius: 2.8rem;
@@ -49,7 +50,7 @@
     background: var(--contrast);
   }
   &__title {
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.6rem;
   }
   &__text {
     margin-bottom: 3.6rem;
@@ -76,10 +77,15 @@
   &__phone,
   &__email,
   &__address {
+    display: block;
     font-family: var(--font-2);
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.16;
     color: var(--text-dark);
+    transition: all .3s linear;
+    &:hover {
+        text-decoration: underline;
+    }
   }
 }

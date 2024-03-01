@@ -106,7 +106,7 @@ body::after {
   height: 100vh;
   background: green;
   z-index: 100;
-  display: none;
+  display: block;
 }
 
 *,
@@ -6746,11 +6746,13 @@ input[type="submit"]:disabled {
 .talk__wrapper {
   display: flex;
   justify-content: space-between;
+  -moz-column-gap: 8.2rem;
+  column-gap: 8.2rem;
 }
 
 .talk__picture {
   position: relative;
-  flex: 0 0 60%;
+  flex: 0 0 53%;
 }
 
 .talk__dotted {
@@ -6773,13 +6775,14 @@ input[type="submit"]:disabled {
 
 .talk__img {
   position: relative;
-  height: 50.4rem;
+  padding-bottom: 76%;
 }
 
 .talk__img img {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 2.8rem;
@@ -6797,7 +6800,7 @@ input[type="submit"]:disabled {
 }
 
 .talk__title {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.6rem;
 }
 
 .talk__text {
@@ -6827,11 +6830,17 @@ input[type="submit"]:disabled {
 }
 
 .talk__phone, .talk__email, .talk__address {
+  display: block;
   font-family: var(--font-2);
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 1.16;
   color: var(--text-dark);
+  transition: all .3s linear;
+}
+
+.talk__phone:hover, .talk__email:hover, .talk__address:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=my.css.map */
