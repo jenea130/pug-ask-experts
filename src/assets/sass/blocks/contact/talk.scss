@@ -1,10 +1,23 @@
 .talk {
   margin-top: 15.1rem;
   margin-bottom: 15rem;
+  @media screen and (max-width: 992px) {
+    margin-bottom: 12rem;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 10rem;
+  }
+  @media screen and (max-width: 576px) {
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
     column-gap: 8.2rem;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
   }
   &__picture {
     position: relative;
@@ -15,6 +28,9 @@
     top: -6.7rem;
     left: -9.5rem;
     z-index: 1;
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
   }
   &__square {
     position: absolute;
@@ -25,11 +41,23 @@
     background: var(--contrast);
     border-radius: 2rem;
     z-index: 2;
+    @media screen and (max-width: 992px) {
+      left: 6rem;
+    }
+    @media screen and (max-width: 768px) {
+      left: 3rem;
+    }
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
   }
   &__img {
     position: relative;
     // height: 50.4rem;
     padding-bottom: 76%;
+    @media screen and (max-width: 576px) {
+      padding-bottom: 0;
+    }
     img {
       position: absolute;
       top: 0;
@@ -39,10 +67,22 @@
       object-fit: cover;
       border-radius: 2.8rem;
       z-index: 3;
+      @media screen and (max-width: 992px) {
+        width: 90%;
+        right: 0;
+        left: initial;
+      }
+      @media screen and (max-width: 576px) {
+        position: static;
+        width: 100%;
+      }
     }
   }
   &__content {
     padding: 6.6rem 0;
+    @media screen and (max-width: 992px) {
+        padding: 4rem 0 0 0;
+    }
   }
   .label {
     margin-bottom: 1.1rem;
@@ -65,13 +105,15 @@
     margin-bottom: 0;
   }
   &__logo {
-    width: 5rem;
-    height: 5rem;
+    svg {
+      //   height: 5rem;
+      //   width: 5rem;
+    }
   }
   &__info {
     span {
-        display: inline-block;
-        margin-bottom: 0.5rem;
+      display: inline-block;
+      margin-bottom: 0.5rem;
     }
   }
   &__phone,
@@ -83,9 +125,9 @@
     font-size: 1.6rem;
     line-height: 1.16;
     color: var(--text-dark);
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     &:hover {
-        text-decoration: underline;
+      text-decoration: underline;
     }
   }
 }
