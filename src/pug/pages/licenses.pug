@@ -12,7 +12,8 @@ block content
 	include ../blocks/globals/main-header
 	+pageIntro("Licenses", "All asset's Licenses", "assets/i/page-intro/licenses-intro.jpg", "page-intro--licenses")
 	.container 
-		+subscribe('subscribe--contact')
+		include ../blocks/licenses/all-licenses
+		+subscribe()
 	include ../blocks/globals/main-footer
 
 block scripts
