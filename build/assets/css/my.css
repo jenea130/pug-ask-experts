@@ -7031,6 +7031,24 @@ input[type="submit"]:disabled {
   overflow: hidden;
 }
 
+@media screen and (max-width: 992px) {
+  .password {
+    margin: 12rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .password {
+    margin: 10rem 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .password {
+    margin: 8rem 0;
+  }
+}
+
 .password__dotted {
   position: absolute;
   top: 0;
@@ -7051,7 +7069,10 @@ input[type="submit"]:disabled {
 }
 
 .password__content {
+  position: relative;
+  padding: 0 3rem;
   text-align: center;
+  z-index: 3;
 }
 
 .password__title {
@@ -7062,7 +7083,8 @@ input[type="submit"]:disabled {
 .password input {
   display: block;
   margin: 0 auto 3rem;
-  min-width: 38.2rem;
+  max-width: 38.2rem;
+  width: 100%;
   padding: 2.4rem 3.3rem;
   border: none;
   outline: none;
