@@ -1,0 +1,21 @@
+extends template
+
+block css
+	link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+	title Contact
+
+block content
+	include ../includes/mixins
+	include ../blocks/globals/top-header
+	include ../blocks/globals/main-header
+	include ../blocks/404/not-found
+	include ../blocks/globals/main-footer
+
+block scripts
+	script(src="assets/libs/jquery-3.7.1.min.js")
+	script(src="assets/libs/slick.min.js")
+	script(src="assets/libs/roundslider.min.js")
+	script(src="assets/js/dist/webpack.js")
+	script(src="assets/jquery/custom-jquery.js")
