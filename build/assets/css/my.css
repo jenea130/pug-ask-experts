@@ -7102,6 +7102,7 @@ input[type="submit"]:disabled {
   position: relative;
   padding: 17.4rem 0;
   background: #f5f5f5;
+  overflow: hidden;
 }
 
 .not-found__body {
@@ -7109,6 +7110,12 @@ input[type="submit"]:disabled {
   margin: 0 auto;
   width: 58.1rem;
   text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .not-found__body {
+    width: 90%;
+  }
 }
 
 .not-found__content {
@@ -7148,6 +7155,12 @@ input[type="submit"]:disabled {
   color: var(--text-dark);
 }
 
+@media screen and (max-width: 576px) {
+  .not-found__title {
+    font-size: 8rem;
+  }
+}
+
 .not-found__subtitle {
   margin-bottom: 0.5rem;
   font-family: var(--font-2);
@@ -7155,6 +7168,12 @@ input[type="submit"]:disabled {
   font-size: 6rem;
   line-height: 1.16;
   color: var(--text-dark);
+}
+
+@media screen and (max-width: 576px) {
+  .not-found__subtitle {
+    font-size: 4rem;
+  }
 }
 
 .not-found__text {
