@@ -1329,6 +1329,23 @@ input[type="submit"]:disabled {
   }
 }
 
+.page-intro.page-intro--licenses {
+  height: 53.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .page-intro.page-intro--licenses {
+    padding-top: 30rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page-intro.page-intro--licenses .page-intro__img {
+    -o-object-position: -98rem center;
+    object-position: -98rem center;
+  }
+}
+
 .page-intro__img {
   position: absolute;
   top: 0;

@@ -87,6 +87,17 @@
       padding-top: 30rem;
     }
   }
+  &.page-intro--licenses {
+    height: 53.6rem;
+    @media screen and (max-width: 768px) {
+      padding-top: 30rem;
+    }
+    .page-intro__img {
+      @media screen and (max-width: 576px) {
+        object-position: -98rem center;
+      }
+    }
+  }
 
   &__img {
     position: absolute;
